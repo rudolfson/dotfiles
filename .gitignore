@@ -1,3 +1,4 @@
 /[A-Za-z]*
 .thunderbird
 .wine*
+.steam*
