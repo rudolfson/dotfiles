@@ -1,0 +1,17 @@
+#!/bin/bash
+
+pushd $HOME
+
+dot=.dotfiles
+
+# REFACTOR decide whether we take all (with an exclusion list) or use an explicit list
+for f in .bashrc .vim .vimrc .tmux.conf
+do
+    if [ -e $f ]
+    then
+        rm -fr $f
+    fi
+    ln -s $dot/$f
+done
+
+popd
