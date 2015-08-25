@@ -10,3 +10,4 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+setxkbmap -option caps:escape
