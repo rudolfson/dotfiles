@@ -1,12 +1,13 @@
-" let pathogen autoisntall bundles
-execute pathogen#infect()
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" autoreload changes in the .vimrc
-autocmd! bufwritepost .vimrc source %
+" let pathogen autoisntall bundles
+execute pathogen#infect()
+
+" set colors
+set background=dark
+colorscheme solarized
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -48,10 +49,6 @@ map <Leader>m <Esc>:tabnext<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-" set colors
-set background=dark
-colorscheme solarized
-
 " Enable file type detection.
 " Use the default filetype settings, so that mail gets 'tw' set to 72,
 " 'cindent' is on in C files, etc.
@@ -78,3 +75,6 @@ augroup END
 
 " always display status line for airplane
 set laststatus=2
+let g:airline_powerline_fonts = 1
+
+let timeoutlen=100
