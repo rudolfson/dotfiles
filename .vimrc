@@ -1,3 +1,6 @@
+" let pathogen autoisntall bundles
+execute pathogen#infect()
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -46,8 +49,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 " set colors
-set t_Co=256
-colors zenburn
+set background=dark
+colorscheme solarized
 
 " Enable file type detection.
 " Use the default filetype settings, so that mail gets 'tw' set to 72,
@@ -72,7 +75,4 @@ augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
-
-" enable ctrlp
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
