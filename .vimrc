@@ -76,3 +76,5 @@ augroup markdown
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
 
+" always display status line for airplane
+set laststatus=2
