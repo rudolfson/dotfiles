@@ -14,4 +14,9 @@ do
     ln -s $dot/$f
 done
 
+# update git submodules
+cd $dot
+git submodule init
+git submodule update
+
 popd
