@@ -2,7 +2,7 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" let pathogen autoisntall bundles
+" let pathogen autoinstall bundles
 execute pathogen#infect()
 
 " set colors

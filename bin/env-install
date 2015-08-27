@@ -5,7 +5,7 @@ pushd $HOME
 dot=.dotfiles
 
 # REFACTOR decide whether we take all (with an exclusion list) or use an explicit list
-for f in .bashrc .vim .vimrc .tmux.conf
+for f in .bashrc .fonts .gvimrc .vim .vimrc .tmux.conf
 do
     if [ -e $f ]
     then
@@ -13,5 +13,10 @@ do
     fi
     ln -s $dot/$f
 done
+
+# update git submodules
+cd $dot
+git submodule init
+git submodule update
 
 popd
