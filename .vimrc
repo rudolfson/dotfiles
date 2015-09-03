@@ -30,7 +30,7 @@ set ignorecase
 set smartcase
 
 " Don't use Ex mode, use Q for formatting
-map Q gq
+"map Q gq
 
 " Bind <Leader> key for more key commands
 let mapleader = ","
@@ -83,3 +83,6 @@ set timeoutlen=100
 " with cursor up and down
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
+
+" use command expansion like in bash
+set wildmode=longest:list
