@@ -12,6 +12,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 setxkbmap -option caps:escape
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-export GVM_DIR="$HOME/.gvm"
-[[ -s "$GVM_DIR/bin/gvm-init.sh" ]] && source "$GVM_DIR/bin/gvm-init.sh"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
