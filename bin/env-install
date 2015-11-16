@@ -5,7 +5,7 @@ pushd $HOME
 dot=.dotfiles
 
 # REFACTOR decide whether we take all (with an exclusion list) or use an explicit list
-for f in .bashrc .bash_profile .bash_logout .fonts .gvimrc .profile .vim .vimrc .tmux.conf
+for f in .bashrc .bash_profile .bash_logout bin .dircolors .fonts .gvimrc .profile .vim .vimrc .tmux.conf
 do
     if [ -e $f ]
     then

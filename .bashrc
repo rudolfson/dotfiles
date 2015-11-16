@@ -1,10 +1,13 @@
-# we ahve 256 colors
+# set up colors
 [[ -z "$TMUX" ]] && export TERM="xterm-256color"
+[[ -e ~/.dircolors ]] && eval "$(dircolors ~/.dircolors)"
 
 # define aliases
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -lhA'
+alias ff='firefox -new-instance -P default > /dev/null 2>&1 &'
+alias ffwg='firefox -new-instance -P wg > /dev/null 2>&1 &'
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
