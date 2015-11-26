@@ -9,10 +9,15 @@ alias la='ls -lhA'
 alias ff='firefox -new-instance -P default > /dev/null 2>&1 &'
 alias ffwg='firefox -new-instance -P wg > /dev/null 2>&1 &'
 
+# define prompt
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# PATH additions
+[[ -d $HOME/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin
+[[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
+export PATH
 
+# remap caps lock key to escape
 setxkbmap -option caps:escape
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
