@@ -37,9 +37,8 @@ let mapleader = ","
 
 " Bind nohl
 " Removes highlight of your last search
-"noremap <C-n> :nohl<CR>
-"vnoremap <C-n> :nohl<CR>
-"inoremap <C-n> :nohl<CR>
+noremap <C-n> :nohl<CR>
+vnoremap <C-n> :nohl<CR>
 
 " Move between tabs
 map <Leader>n <Esc>:tabprevious<CR>
