@@ -63,8 +63,9 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
-" set encoding
+" set file encoding and line ending
 set encoding=utf-8
+set fileformat=unix
 
 " enable markdown
 augroup markdown
