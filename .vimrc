@@ -67,12 +67,6 @@ set expandtab
 set encoding=utf-8
 set fileformat=unix
 
-" enable markdown
-augroup markdown
-    au!
-    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
-
 " always display status line for airplane
 set laststatus=2
 let g:airline_powerline_fonts = 1
