@@ -18,7 +18,7 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 export PATH
 
 # remap caps lock key to escape
-setxkbmap -option caps:escape
+[[ -x /usr/bin/setxkbmap ]] && /usr/bin/setxkbmap -option caps:escape
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
