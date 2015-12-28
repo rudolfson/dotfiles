@@ -17,6 +17,10 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
 export PATH
 
+# if vim is present,  use it as an editor
+[[ -x /usr/bin/vim ]] && EDITOR=/usr/bin/vim
+export EDITOR
+
 # remap caps lock key to escape
 [[ -x /usr/bin/setxkbmap ]] && /usr/bin/setxkbmap -option caps:escape
 
