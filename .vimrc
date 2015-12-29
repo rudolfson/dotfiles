@@ -35,14 +35,14 @@ set smartcase
 " Bind <Leader> key for more key commands
 let mapleader = ","
 
+" Move between tabs
+map <Leader>n <Esc>:tabprevious<CR>
+map <Leader>m <Esc>:tabnext<CR>
+
 " Bind nohl
 " Removes highlight of your last search
 noremap <C-n> :nohl<CR>
 vnoremap <C-n> :nohl<CR>
-
-" Move between tabs
-map <Leader>n <Esc>:tabprevious<CR>
-map <Leader>m <Esc>:tabnext<CR>
 
 " Indent code blocks in visual mode without losing selection
 vnoremap < <gv
@@ -71,7 +71,7 @@ set fileformat=unix
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
-set timeoutlen=100
+set timeoutlen=500
 
 " use Ctrl-p and Ctr-n to scroll thorugh history in command mode just like
 " with cursor up and down
@@ -80,3 +80,7 @@ cnoremap <C-n> <Down>
 
 " use command expansion like in bash
 set wildmode=longest:list
+
+" use ö and ä for [ and ] respectively, since they are easier to reach
+map ö [
+map ä ]
