@@ -84,3 +84,7 @@ set wildmode=longest:list
 " use ö and ä for [ and ] respectively, since they are easier to reach
 map ö [
 map ä ]
+
+" enable %% in command mode for current file's path extension
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
