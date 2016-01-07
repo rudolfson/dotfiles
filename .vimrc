@@ -1,60 +1,43 @@
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
+set nocompatible                       " use vim settings, must be first line
 
 " let pathogen autoinstall bundles
 execute pathogen#infect()
 
-" set colors
+" colors
 set background=dark
 colorscheme solarized
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
+set backspace=indent,eol,start         " allow backspacing over everything in insert mode
 
-set nobackup		" do not keep a backup file, use versions instead set
-set nowritebackup
-set noswapfile
-set history=500		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
+set nobackup                           " do not keep a backup file
+set nowritebackup                      " do not write a backup during actual write
+set noswapfile                         " do not use a swap file
+set history=500                        " entries in command line history
+set ruler                              " show the cursor position all the time
+set cursorline                         " highlight line where the cursor is
+set showcmd                            " display incomplete commands
 
-" display line numbers
-set number
-set relativenumber
+set number                             " display line numbers
+set relativenumber                     " display relative numbers
 
-" set search options
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+" searching
+set hlsearch                           " hightlight search results
+set incsearch                          " incremental search
+set ignorecase                         " ignore case when searching
+set smartcase                          " search case sensitive if an upper case letter is used
 
-" Don't use Ex mode, use Q for formatting
-"map Q gq
-
-" Bind <Leader> key for more key commands
-let mapleader = ","
-
-" Move between tabs
-map <Leader>n <Esc>:tabprevious<CR>
-map <Leader>m <Esc>:tabnext<CR>
-
-" Bind nohl
-" Removes highlight of your last search
+" remove highlight of last search in normal mode
 noremap <C-n> :nohl<CR>
+" remove highlight of last search in visual mode 
 vnoremap <C-n> :nohl<CR>
 
 " Indent code blocks in visual mode without losing selection
 vnoremap < <gv
 vnoremap > >gv
 
-" Enable file type detection.
-" Use the default filetype settings, so that mail gets 'tw' set to 72,
-" 'cindent' is on in C files, etc.
-" Also load indent files, to automatically do language-dependent indenting.
-filetype off
-filetype plugin indent on
-syntax on
+filetype off                           " reset filetype settings
+filetype plugin indent on              " enable file type detection
+syntax on                              " enable syntax highlighting
 
 " Don't use tabs
 set tabstop=4
@@ -63,23 +46,20 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
-" set file encoding and line ending
-set encoding=utf-8
-set fileformat=unix
+set encoding=utf-8                     " default file encoding
+set fileformat=unix                    " default end of line format
 
-" always display status line for airplane
-set laststatus=2
-let g:airline_powerline_fonts = 1
+set laststatus=2                       " always display status line for airplane
+let g:airline_powerline_fonts = 1      " use fancy powerline fonts
 
-set timeoutlen=500
+set timeoutlen=300                     " timeout for using a leader key
 
 " use Ctrl-p and Ctr-n to scroll thorugh history in command mode just like
 " with cursor up and down
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
-" use command expansion like in bash
-set wildmode=longest:list
+set wildmode=longest:list              " use command expansion like bash
 
 " use ö and ä for [ and ] respectively, since they are easier to reach
 map ö [
