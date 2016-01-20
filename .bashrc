@@ -7,6 +7,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -lhA'
 alias ff='firefox -new-instance -P default > /dev/null 2>&1 &'
+alias ffdev='firefox -new-instance -P dev > /dev/null 2>&1 &'
 alias ffwg='firefox -new-instance -P wg > /dev/null 2>&1 &'
 
 # define prompt
