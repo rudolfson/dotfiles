@@ -64,7 +64,9 @@ set wildmode=longest:list              " use command expansion like bash
 " use ö and ä for [ and ] respectively, since they are easier to reach
 map ö [
 map ä ]
+map ü `
 
 " enable %% in command mode for current file's path extension
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+runtime macros/matchit.vim
