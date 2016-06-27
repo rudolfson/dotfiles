@@ -15,3 +15,7 @@ if [ -n "$BASH_VERSION" ]; then
 	. "$HOME/.bashrc"
     fi
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/c/Users/lhe/.sdkman"
+[[ -s "/c/Users/lhe/.sdkman/bin/sdkman-init.sh" ]] && source "/c/Users/lhe/.sdkman/bin/sdkman-init.sh"
