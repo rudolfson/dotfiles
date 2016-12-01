@@ -6,9 +6,7 @@
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -lhA'
-alias ff='firefox -new-instance -P default > /dev/null 2>&1 &'
-alias ffdev='firefox -new-instance -P dev > /dev/null 2>&1 &'
-alias ffwg='firefox -new-instance -P wg > /dev/null 2>&1 &'
+alias svndiff='svn diff | sed -r '"'"'s/^(-.*)$/'"'"'$(tput setaf 1)'"'"'\1'"'"'$(tput sgr0)/ | sed -r '"'"'s/^(\+.*)$/'"'"'$(tput setaf 2)'"'"'\1'"'"'$(tput sgr0)/'
 
 # define prompt
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
