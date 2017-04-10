@@ -1,8 +1,8 @@
 BoldAsFont=yes
 Font=Source Code Pro
 FontHeight=14
-Columns=100
-Rows=40
+Columns=110
+Rows=45
 ScrollbackLines=100000
 FontIsBold=no
 Locale=de_DE
