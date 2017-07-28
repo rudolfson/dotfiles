@@ -28,6 +28,9 @@ export EDITOR
 [[ -s "$HOME/.git-prompt.sh" ]] && source "$HOME/.git-prompt.sh"
 [[ -s "$HOME/.git-completion.bash" ]] && source "$HOME/.git-completion.bash"
 
+# set language
+export LANGUAGE=en
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
