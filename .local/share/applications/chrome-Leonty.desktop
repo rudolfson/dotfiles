@@ -1,0 +1,6 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Chrome Leonty
+Exec=/opt/google/chrome/google-chrome "--profile-directory=Profile 1"
+Icon=google-chrome

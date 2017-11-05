@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=EVE Launcher
+Exec=evelauncher/evelauncher.sh
+Icon=/home/lars/.local/share/applications/evelauncher.png
+Type=Application
+Categories=Game
