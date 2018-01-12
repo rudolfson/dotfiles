@@ -23,11 +23,12 @@ export PATH
 [[ -x /usr/bin/vim ]] && EDITOR=/usr/bin/vim
 export EDITOR
 
-# remap caps lock key to escape
-[[ -x /usr/bin/setxkbmap ]] && /usr/bin/setxkbmap -option caps:escape
-
-# add git prompt
+# git stuff
 [[ -s "$HOME/.git-prompt.sh" ]] && source "$HOME/.git-prompt.sh"
+[[ -s "$HOME/.git-completion.bash" ]] && source "$HOME/.git-completion.bash"
+
+# set language
+export LANGUAGE=en
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
