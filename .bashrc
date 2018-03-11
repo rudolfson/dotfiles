@@ -17,6 +17,7 @@ PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\03
 # PATH additions
 [[ -d $HOME/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
+[[ -d $HOME/.local/bin ]] && PATH=$PATH:$HOME/.local/bin
 export PATH
 
 # if vim is present,  use it as an editor

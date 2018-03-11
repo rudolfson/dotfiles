@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Python Fitting Assistent
+Name=pyfa
 Exec=/opt/pyfa/pyfa.py
 Icon=/home/lars/.local/share/applications/pyfa.png
 Type=Application
