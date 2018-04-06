@@ -1,5 +1,8 @@
 # set up colors
-[[ -z "$TMUX" ]] && export TERM="xterm-256color"
+#set -x
+#trap read debug
+
+[[ -z "$TMUX" ]] && [[ $(uname -o) != "Msys" ]] && export TERM="xterm-256color"
 [[ -e ~/.dircolors ]] && eval "$(dircolors ~/.dircolors)"
 
 # define aliases
@@ -15,7 +18,6 @@ alias grepdev='grep --exclude-dir=.git --exclude-dir=target --exclude-dir=.svn'
 PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ '
 
 # PATH additions
-[[ -d $HOME/.rvm/bin ]] && PATH=$PATH:$HOME/.rvm/bin
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
 export PATH
 
