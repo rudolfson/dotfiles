@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=EVEMon
+Exec=env WINEARCH=win32 WINEPREFIX=/home/lars/.wine_EVEMon wine /home/lars/EVEMon/EVEMon.exe
+Icon=/home/lars/.local/share/applications/evemon.png
+Type=Application
+Categories=Game

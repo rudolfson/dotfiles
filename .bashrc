@@ -11,7 +11,7 @@ alias ll='ls -lh'
 alias la='ls -lhA'
 alias svndiff='svn diff | sed -r '"'"'s/^(-.*)$/'"'"'$(tput setaf 1)'"'"'\1'"'"'$(tput sgr0)/ | sed -r '"'"'s/^(\+.*)$/'"'"'$(tput setaf 2)'"'"'\1'"'"'$(tput sgr0)/'
 alias mci='mvn clean install -DskipTests'
-alias grepdev='grep --exclude-dir=.git --exclude-dir=target --exclude-dir=.svn'
+alias grepsrc='grep --exclude-dir=.git --exclude-dir=target --exclude-dir=.svn --exclude-dir=.meteor --exclude-dir=node_modules'
 
 # define prompt
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
@@ -19,6 +19,7 @@ PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\03
 
 # PATH additions
 [[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
+[[ -d $HOME/.local/bin ]] && PATH=$PATH:$HOME/.local/bin
 export PATH
 
 # if vim is present,  use it as an editor
