@@ -1,2 +1,2 @@
 set lines=54 columns=130
-set guifont=Meslo_LG_S_DZ_for_Powerline:h11:cANSI
+set guifont=Source_Code_Pro:h12:cANSI
