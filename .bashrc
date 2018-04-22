@@ -9,6 +9,8 @@ alias la='ls -lhA'
 alias svndiff='svn diff | sed -r '"'"'s/^(-.*)$/'"'"'$(tput setaf 1)'"'"'\1'"'"'$(tput sgr0)/ | sed -r '"'"'s/^(\+.*)$/'"'"'$(tput setaf 2)'"'"'\1'"'"'$(tput sgr0)/'
 alias mci='mvn clean install -DskipTests'
 alias grepdev='grep --exclude-dir=.git --exclude-dir=target --exclude-dir=.svn'
+which python3 > /dev/null && [[ "$(python --version 2>&1)" != "$(python3 --version 2>&1)" ]] && alias python=python3
+which pip3 > /dev/null && [[ "$(pip --version 2>&1)" != "$(pip3 --version 2>&1)" ]] && alias pip=pip3
 
 # define prompt
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
@@ -30,6 +32,9 @@ export EDITOR
 
 # set language
 export LANGUAGE=en
+
+# enable direnv
+which direnv > /dev/null && eval "$(direnv hook bash)"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
