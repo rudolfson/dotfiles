@@ -6,18 +6,21 @@ dot=.dotfiles
 
 # link individual files
 # REFACTOR decide whether we take all (with an exclusion list) or use an explicit list
-for f in .bashrc \
+for f in .bash_logout \
     .bash_profile \
-    .bash_logout \
+    .bashrc \
     .dircolors \
-    .git-completion.bash \
-    .git-prompt.sh \
     .fonts \
+    .git-completion.bash \
+    .gitconfig \
+    .git-prompt.sh \
     .gvimrc \
+    .ideavimrc \
+    .minttyrc \
     .profile \
+    .tmux.conf \
     .vim \
-    .vimrc \
-    .tmux.conf
+    .vimrc
 do
     [[ -e $f ]] && rm -fr $f
     ln -s $dot/$f
