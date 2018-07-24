@@ -12,6 +12,7 @@ alias la='ls -lhA'
 alias svndiff='svn diff | sed -r '"'"'s/^(-.*)$/'"'"'$(tput setaf 1)'"'"'\1'"'"'$(tput sgr0)/ | sed -r '"'"'s/^(\+.*)$/'"'"'$(tput setaf 2)'"'"'\1'"'"'$(tput sgr0)/'
 alias mci='mvn clean install -DskipTests'
 alias grepsrc='grep --exclude-dir=.git --exclude-dir=target --exclude-dir=.svn --exclude-dir=.meteor --exclude-dir=node_modules'
+alias svnroot='svn info | grep "Repository Root" | awk '"'"'{print $NF}'"'"''
 
 # define prompt
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
