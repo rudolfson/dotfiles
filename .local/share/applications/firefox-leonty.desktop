@@ -2,5 +2,5 @@
 [Desktop Entry]
 Type=Application
 Name=Firefox Leonty
-Exec=firefox -no-remote -P leonty
+Exec=firefox -P leonty
 Icon=firefox
