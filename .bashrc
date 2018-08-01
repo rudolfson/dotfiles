@@ -36,6 +36,9 @@ export EDITOR
 # set language
 export LANGUAGE=en
 
+# load a system specific bashrc
+[[ -s "$HOME/.local/.bashrc" ]] && source "$HOME/.local/.bashrc"
+
 # enable direnv
 which direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
 
