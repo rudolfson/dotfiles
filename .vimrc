@@ -6,7 +6,6 @@ execute pathogen#infect()
 " colors
 set background=dark
 colorscheme solarized
-let g:solarized_termcolors = 256       " fix colors in hyper terminal
 
 set backspace=indent,eol,start         " allow backspacing over everything in insert mode
 
