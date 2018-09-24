@@ -18,7 +18,6 @@ set cursorline                         " highlight line where the cursor is
 set showcmd                            " display incomplete commands
 
 set number                             " display line numbers
-set relativenumber                     " display relative numbers
 
 " searching
 set hlsearch                           " hightlight search results
