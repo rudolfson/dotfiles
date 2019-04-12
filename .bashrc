@@ -45,6 +45,9 @@ which direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
 # cd into home directory if we are somewhere in /mnt/c/Users
 [[ $(pwd) =~ /mnt/c/Users/[a-z]+$ ]] && cd ~
 
+# openshift expansion
+[ -e ~/bin/oc ] && eval "$(oc completion bash)"
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
