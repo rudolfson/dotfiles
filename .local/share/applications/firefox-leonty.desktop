@@ -1,6 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=Firefox Leonty
-Exec=firefox -P leonty
-Icon=firefox

@@ -1,6 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=Chrome Rudolfson
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default
-Icon=google-chrome

@@ -1,6 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=Firefox Rudolfson
-Exec=firefox -no-remote -P rudolfson
-Icon=firefox
