@@ -15,7 +15,6 @@ for f in .bash_logout \
     .git-prompt.sh \
     .gvimrc \
     .ideavimrc \
-    .minttyrc \
     .profile \
     .tmux.conf \
     .vim \
