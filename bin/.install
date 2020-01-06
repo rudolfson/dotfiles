@@ -10,7 +10,6 @@ for f in .bash_logout \
     .bash_profile \
     .bashrc \
     .dircolors \
-    .fonts \
     .git-completion.bash \
     .gitconfig \
     .git-prompt.sh \
