@@ -1,5 +1,5 @@
 [user]
-	email = lars.heller@ibs.valantic.com
+	email = l.heller@tarent.de
 	name = Lars Heller
 [push]
 	default = simple
@@ -10,8 +10,6 @@
     lg = !"git lg1"
     ss = status -s
 
-[http]
-	sslbackend = schannel
 [core]
 	editor = '/usr/bin/vim'
 	autocrlf = input
