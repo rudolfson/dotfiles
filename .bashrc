@@ -36,6 +36,10 @@ export EDITOR
 # set language
 export LANGUAGE=en
 
+# set search path for cd command
+export CDPATH=.
+[[ -d "$HOME/Projects" ]] && export CDPATH="$CDPATH":"$HOME/Projects"
+
 # load a system specific bashrc
 [[ -s "$HOME/.local/.bashrc" ]] && source "$HOME/.local/.bashrc"
 
@@ -53,6 +57,7 @@ which direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
+# node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
