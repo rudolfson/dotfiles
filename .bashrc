@@ -36,12 +36,6 @@ export EDITOR
 # set language
 export LANGUAGE=en
 
-# set search path for cd command - only in interactive shell
-if [[ $- == *i* ]]; then 
-    export CDPATH=.
-    [[ -d "$HOME/Projects" ]] && export CDPATH="$CDPATH":"$HOME/Projects"
-fi
-
 # load a system specific bashrc
 [[ -s "$HOME/.local/.bashrc" ]] && source "$HOME/.local/.bashrc"
 
