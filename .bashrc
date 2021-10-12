@@ -45,8 +45,9 @@ which direnv > /dev/null 2>&1 && eval "$(direnv hook bash)"
 # cd into home directory if we are somewhere in /mnt/c/Users
 [[ $(pwd) =~ /mnt/c/Users/[a-z]+$ ]] && cd ~
 
-# openshift expansion
-[ -e ~/bin/oc ] && eval "$(oc completion bash)"
+# command completions
+[[ -e ~/bin/oc ]] && eval "$(oc completion bash)"
+[[ -x /usr/bin/terraform ]] && complete -C /usr/bin/terraform terraform
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
@@ -55,5 +56,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # node version manager
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
