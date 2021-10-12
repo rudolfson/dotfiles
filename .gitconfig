@@ -16,3 +16,6 @@
 	autocrlf = input
 [pull]
 	ff = only
+
+[includeIf "gitdir:~/Projects/paymenttools/"]
+    path = ~/Projects/paymenttools/.gitconfig_paymenttools
