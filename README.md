@@ -10,3 +10,5 @@ everything.
 ## Improvements
 * loop through files in `bin`
 * create a template for firefox desktop files and loop them
+* create a new play for installing software?
+
