@@ -19,3 +19,6 @@
 
 [includeIf "gitdir:~/Projects/paymenttools/"]
     path = ~/Projects/paymenttools/.gitconfig_paymenttools
+
+[includeIf "gitdir:~/Projects/rd-laserdolphins/"]
+    path = ~/Projects/rd-laserdolphins/.gitconfig_rd_laserdolphins
