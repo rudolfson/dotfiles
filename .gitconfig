@@ -22,3 +22,5 @@
 
 [includeIf "gitdir:~/Projects/rd-laserdolphins/"]
     path = ~/Projects/rd-laserdolphins/.gitconfig_rd_laserdolphins
+[url "git@github.com:"]
+	insteadOf = https://github.com/
