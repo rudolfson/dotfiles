@@ -11,15 +11,19 @@ alias ll='ls -lh'
 alias la='ls -lhA'
 alias grepsrc='grep --exclude-dir=.git --exclude-dir=target --exclude-dir=.svn --exclude-dir=.meteor --exclude-dir=node_modules'
 alias jwtd="jq -R 'split(\".\") | .[0],.[1] | @base64d | fromjson'"
-alias cleanup-branches='git branch -v | grep '\''\[gone\]'\'' | awk '\''{print $1}'\'' | xargs git branch -D'
+alias main="git checkout main && git fetch --all -p && git merge"
+alias cleanup-branches='git branch -v | grep '\''\[gone\]'\'' | awk '\''{print $1}'\'' | xargs -r git branch -D'
+alias c='xclip -selection clipboard'
+alias v='xclip -o -selection clipboard'
 
 # define prompt
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ '
 
 # PATH additions
-[[ -d $HOME/bin ]] && PATH=$PATH:$HOME/bin
-[[ -d $HOME/.local/bin ]] && PATH=$PATH:$HOME/.local/bin
+for p in "$HOME/bin" "$HOME/go/bin"; do
+    [[ -d $p ]] && PATH=$PATH:$p
+done
 export PATH
 
 # if vim is present,  use it as an editor
