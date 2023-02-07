@@ -63,6 +63,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -x ~/bin/oc ]] && eval "$(oc completion bash)"
 [[ -x /usr/bin/terraform ]] && complete -C /usr/bin/terraform terraform
 [[ -f /usr/share/bash-completion/completions/git ]] && source /usr/share/bash-completion/completions/git
-if which kubectl > /dev/null; then . <(kubectl completion bash > /dev/null 2>&1); fi
+if which kubectl 2> /dev/null; then . <(kubectl completion bash > /dev/null 2>&1); fi
 [[ -x /usr/bin/gh ]] && eval "$(/usr/bin/gh completion -s bash)"
-if which flux > /dev/null; then . <(flux completion bash); fi
+if which flux 2> /dev/null; then . <(flux completion bash); fi
