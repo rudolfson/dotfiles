@@ -19,7 +19,6 @@
         - .bash_profile 
         - .bashrc 
         - .dircolors 
-        - .fonts
         - .git-completion.bash 
         - .git-prompt.sh 
         - .gitconfig 
