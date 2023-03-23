@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Source Code Pro', 'Droid Sans Mono', 'monospace', monospace",
+    "window.zoomLevel": 1,
+    "keyboard.dispatch": "keyCode",
+    "svelte.enable-ts-plugin": true
+}
