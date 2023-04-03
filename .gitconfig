@@ -24,3 +24,6 @@
     path = ~/Projects/rd-laserdolphins/.gitconfig_rd_laserdolphins
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[pager]
+	status = false
+	branch = false
