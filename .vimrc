@@ -4,8 +4,8 @@ set nocompatible                       " use vim settings, must be first line
 execute pathogen#infect()
 
 " colors
-set background=dark
-colorscheme solarized
+set background=light
+" colorscheme solarized
 
 set backspace=indent,eol,start         " allow backspacing over everything in insert mode
 
