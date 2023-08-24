@@ -27,3 +27,5 @@
 [pager]
 	status = false
 	branch = false
+[init]
+	defaultBranch = main
