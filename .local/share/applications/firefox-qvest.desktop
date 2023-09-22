@@ -1,6 +1,6 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Name=Firefox tarent 
-Exec=firefox -P tarent
+Name=Firefox Qvest
+Exec=firefox -P qvest
 Icon=firefox
