@@ -4,6 +4,6 @@
     "keyboard.dispatch": "keyCode",
     "svelte.enable-ts-plugin": true,
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Default Light+",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Default Light Modern"
 }
