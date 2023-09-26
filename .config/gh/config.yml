@@ -21,8 +21,8 @@ aliases:
       --author @me \
       --state open \
       --json url \
-      --template '{{range .}}{{.url}}{{end}}' \
-      | xargs -I PR gh prstate PR
+      --template '{{range .}}{{.url}}{{print "\n"}}{{end}}' \
+      | xargs -L 1 gh prstate
     prstate: |
       pr view
       --json number,title,url,reviewDecision,updatedAt,comments
