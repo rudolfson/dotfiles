@@ -22,7 +22,7 @@ aliases:
       --state open \
       --json url \
       --template '{{range .}}{{.url}}{{print "\n"}}{{end}}' \
-      | xargs -L 1 gh prstate
+      | xargs -r -L 1 gh prstate
     prstate: |
       pr view
       --json number,title,url,reviewDecision,updatedAt,comments
