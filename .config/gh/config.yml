@@ -13,7 +13,7 @@ aliases:
       api -XGET search/issues
       -f q='team-review-requested:rewe-digital-content/team-laser-dolphins is:pr is:open review:required -author:app/dependabot -author:@me'
       --template '{{range .items -}}
-      {{.number | printf "#%v" | autocolor "green" }} {{.title}} ({{timeago .created_at | autocolor "yellow" }})
+      {{.number | printf "#%v" | autocolor "green" }} {{.title | autocolor "white"}} ({{timeago .created_at | autocolor "yellow" }})
       → {{.html_url}} {{print "\n\n" -}}
       {{end}}'
     mine: |
