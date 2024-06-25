@@ -14,8 +14,20 @@
 [core]
 	editor = '/usr/bin/vim'
 	autocrlf = input
+    pager = '/usr/bin/delta'
 [pull]
 	ff = only
+[interactive]
+    diffFilter = '/usr/bin/delta --color-only'
+
+[delta]
+    navigate = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
 
 [includeIf "gitdir:~/Projects/paymenttools/"]
     path = ~/Projects/paymenttools/.gitconfig_paymenttools
