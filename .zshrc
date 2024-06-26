@@ -72,6 +72,7 @@ export ZSH_CUSTOM=$HOME/.dotfiles/oh-my-zsh-custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    rust
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
