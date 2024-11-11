@@ -1,0 +1,61 @@
+---
+swapfile_path: /swapfile
+swapfile_size: 16G
+
+base_packages:
+  - base-devel
+  - curl
+  - git
+  - wget
+  - yay
+
+font_packages:
+  - adobe-source-code-pro-fonts
+  - adobe-source-han-sans-otc-fonts # for CJK
+  - adobe-source-sans-fonts
+  - noto-fonts
+  - noto-fonts-emoji # for emoji
+  - ttf-dejavu
+  - ttf-droid
+  - ttf-opensans
+  - ttf-roboto
+  - ttf-ubuntu-font-family
+
+other_packages:
+  - bash-completion
+  - bat
+  - blackbox-terminal
+  - btop
+  - evolution
+  - firefox
+  - flatpak
+  - gnome-shell-extension-system-monitor-next-git
+  - linux-headers
+  - neovim
+  - nextcloud-client
+  - paru
+  - qrencode
+  - ripgrep
+  - spotify
+  - timew
+  - tmux
+  - vim
+  - xclip
+  - zsh
+
+dev_packages:
+  - docker
+  - docker-compose
+  - github-client
+  - gnu-netcat
+#   - intellij-idea-ultimate-edition
+  - kcat
+  - python
+  - python-pip
+  - rustup
+  - visual-studio-code-bin
+
+flatpak_packages:
+  - com.discordapp.Discord
+  - com.google.Chrome
+  - org.keepassxc.KeePassXC

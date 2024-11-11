@@ -1,0 +1,37 @@
+---
+- name: Setup dotfiles
+  vars:
+    destination: "{{ lookup('env', 'HOME') }}"
+
+- name: Print where we will execute (defaults to home)
+  ansible.builtin.debug:
+    msg: "We'll use {{ destination }} as the directory to create everything"
+- name: Link dot files and directories
+  ansible.builtin.file:
+    src: "{{ playbook_dir }}/{{ item }}"
+    dest: "{{ destination }}/{{ item }}"
+    state: link
+  loop:
+    - .bash_logout 
+    - .bash_profile 
+    - .bashrc 
+    - .dir_colors
+    - .dircolors 
+    - .git-completion.bash 
+    - .gitconfig 
+    - .git-prompt.sh 
+    - .gvimrc 
+    - .ideavimrc 
+    - .profile 
+    - .tmux.conf 
+    - .vim 
+    - .vimrc
+    - .zshrc
+    - .local/bin/jcurl
+- name: Init submodules
+  ansible.builtin.command:
+    cmd: "git submodule {{ item }}"
+    chdir: "{{ playbook_dir }}"
+  loop:
+    - init
+    - update

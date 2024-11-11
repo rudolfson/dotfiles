@@ -1,0 +1,5 @@
+- name: Install Flatpak packages for the current user
+  flatpak:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ flatpak_packages }}"

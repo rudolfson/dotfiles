@@ -1,0 +1,11 @@
+---
+- name: Update mirrors
+  become: true
+  command: pacman-mirrors --country Germany
+  changed_when: false
+
+- name: Update package cache
+  become: true
+  pacman:
+    update_cache: true
+  changed_when: false
