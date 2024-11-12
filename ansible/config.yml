@@ -29,6 +29,7 @@ other_packages:
   - evolution
   - firefox
   - flatpak
+  - git-delta
   - gnome-shell-extension-system-monitor-next-git
   - linux-headers
   - neovim

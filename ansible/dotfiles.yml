@@ -1,11 +1,12 @@
 ---
-- name: Setup dotfiles
-  vars:
+- name: Determine where to create the links
+  set_fact:
     destination: "{{ lookup('env', 'HOME') }}"
 
 - name: Print where we will execute (defaults to home)
   ansible.builtin.debug:
     msg: "We'll use {{ destination }} as the directory to create everything"
+
 - name: Link dot files and directories
   ansible.builtin.file:
     src: "{{ playbook_dir }}/{{ item }}"
