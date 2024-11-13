@@ -20,6 +20,7 @@ font_packages:
   - ttf-opensans
   - ttf-roboto
   - ttf-sourcecodepro-nerd
+  - ttf-nerd-fonts-symbols
   - ttf-ubuntu-font-family
 
 other_packages:
@@ -54,6 +55,7 @@ dev_packages:
 #   - intellij-idea-ultimate-edition
   - kcat
   - lazygit
+  - luarocks
   - python
   - python-pip
   - rustup
