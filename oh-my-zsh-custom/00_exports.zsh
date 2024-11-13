@@ -2,5 +2,5 @@
 # Common exports not belonging to a specific category
 #
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export PAGER="less -F"

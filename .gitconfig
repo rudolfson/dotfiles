@@ -12,7 +12,7 @@
     tagswithdates = log --tags --simplify-by-decoration --pretty='format:%ai %d'
 
 [core]
-	editor = '/usr/bin/vim'
+	editor = '/usr/bin/nvim'
 	autocrlf = input
     pager = '/usr/bin/delta'
 [pull]
