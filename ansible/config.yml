@@ -19,24 +19,26 @@ font_packages:
   - ttf-droid
   - ttf-opensans
   - ttf-roboto
+  - ttf-sourcecodepro-nerd
   - ttf-ubuntu-font-family
 
 other_packages:
   - bash-completion
-  - bat
-  - blackbox-terminal
-  - btop
-  - evolution
+  - bat # cat with line numbers and syntax highlighting
+  - btop # alternative to htop
+  - evolution # mail client
+  - fd # alternative to find
   - firefox
   - flatpak
-  - git-delta
+  - git-delta # show diffs like in git PRs
   - gnome-shell-extension-system-monitor-next-git
+  - kitty # GPU powered terminal
   - linux-headers
   - neovim
   - nextcloud-client
   - paru
   - qrencode
-  - ripgrep
+  - ripgrep # alternative to grep, command is rg
   - spotify
   - timew
   - tmux
@@ -51,6 +53,7 @@ dev_packages:
   - gnu-netcat
 #   - intellij-idea-ultimate-edition
   - kcat
+  - lazygit
   - python
   - python-pip
   - rustup

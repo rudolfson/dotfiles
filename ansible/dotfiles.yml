@@ -13,11 +13,10 @@
     dest: "{{ destination }}/{{ item }}"
     state: link
   loop:
+    # dot files in home
     - .bash_logout 
     - .bash_profile 
     - .bashrc 
-    - .dir_colors
-    - .dircolors 
     - .git-completion.bash 
     - .gitconfig 
     - .git-prompt.sh 
@@ -28,7 +27,13 @@
     - .vim 
     - .vimrc
     - .zshrc
+    # local binaries
     - .local/bin/jcurl
+    # configs
+    - .config/digikamrc
+    - .config/digikam_systemrc
+    - .config/kitty
+    - .config/nvim
 - name: Init submodules
   ansible.builtin.command:
     cmd: "git submodule {{ item }}"

@@ -10,6 +10,7 @@
     - import_tasks: ansible/01_update.yml
     - import_tasks: ansible/02_base_packages.yml
     - import_tasks: ansible/03_swap.yml
+      tags: swap
     - import_tasks: ansible/04_fonts.yml
     - import_tasks: ansible/05_other_packages.yml
     - import_tasks: ansible/06_dev_packages.yml
