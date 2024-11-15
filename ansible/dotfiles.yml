@@ -7,11 +7,17 @@
   ansible.builtin.debug:
     msg: "We'll use {{ destination }} as the directory to create everything"
 
+- name: Create necessary directories
+  ansible.builtin.file:
+    path: "{{ destination }}/.local/bin"
+    state: directory
+
 - name: Link dot files and directories
   ansible.builtin.file:
     src: "{{ playbook_dir }}/{{ item }}"
     dest: "{{ destination }}/{{ item }}"
     state: link
+    force: true
   loop:
     # dot files in home
     - .bash_logout 

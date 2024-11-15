@@ -36,7 +36,7 @@ other_packages:
   - kitty # GPU powered terminal
   - linux-headers
   - neovim
-  - nextcloud-client
+  - # nextcloud-client # we'll use the flatpak version
   - paru
   - qrencode
   - ripgrep # alternative to grep, command is rg
@@ -50,18 +50,19 @@ other_packages:
 dev_packages:
   - docker
   - docker-compose
-  - github-client
+  - github-cli
   - gnu-netcat
-#   - intellij-idea-ultimate-edition
+  - intellij-idea-ultimate-edition
   - kcat
   - lazygit
   - luarocks
   - python
   - python-pip
-  - rustup
   - visual-studio-code-bin
 
 flatpak_packages:
   - com.discordapp.Discord
   - com.google.Chrome
   - org.keepassxc.KeePassXC
+  - com.slack.Slack
+  - com.nextcloud.desktopclient.nextcloud
