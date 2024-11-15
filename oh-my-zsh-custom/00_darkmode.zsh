@@ -3,6 +3,7 @@
 # 
 # works only with Gnome
 #
+#
 
 # switch dark mode
 switchdm() {
@@ -26,10 +27,10 @@ _adjust_environment_to_dark_mode() {
     current=$(_query_dark_mode)
     if [[ "$current" == "'prefer-dark'" ]] {
         export BAT_THEME=gruvbox-dark
-        kitty +kitten themes --cache-age=-1 --reload-in=all "Gruvbox Dark"
+        kitty +kitten themes --reload-in=all "Gruvbox Dark"
     } else {
         export BAT_THEME=gruvbox-light
-        kitty +kitten themes --cache-age=-1 --reload-in=all "Solarized Light"
+        kitty +kitten themes --reload-in=all "Solarized Light"
     }
 }
 
@@ -38,5 +39,4 @@ _adjust_environment_to_dark_mode
 
 # set a short alias
 alias dm=switchdm
-
 
