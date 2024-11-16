@@ -17,6 +17,8 @@ To skip the swapfile setup use
 * oh-my-zsh needs an install first
 * system monitor status
 * sdkman install
+* add pacman color
+* edit grubconfig to always show boot menu
 * merge this repo and the notes for setting up a new laptop?
 * create a template for firefox desktop files and loop them
 
