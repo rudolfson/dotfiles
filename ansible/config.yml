@@ -43,6 +43,7 @@ other_packages:
   - spotify
   - timew
   - tmux
+  - tree
   - vim
   - xclip
   - zsh

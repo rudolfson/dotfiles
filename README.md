@@ -20,6 +20,7 @@ To skip the swapfile setup use
 * oh-my-zsh needs an install first
 * system monitor status
 * sdkman install
+* nvm install
 * add pacman color
 * edit grubconfig to always show boot menu
 * merge this repo and the notes for setting up a new laptop?
