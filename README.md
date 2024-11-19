@@ -14,6 +14,9 @@ To skip the swapfile setup use
 ```
 
 ## Improvements
+* commands to install ansible-core
+* download dotfiles from github
+* needs SSH keys for github to clone submodules
 * oh-my-zsh needs an install first
 * system monitor status
 * sdkman install
