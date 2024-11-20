@@ -18,11 +18,13 @@ To skip the swapfile setup use
 * download dotfiles from github
 * needs SSH keys for github to clone submodules
 * oh-my-zsh needs an install first
-* system monitor status
 * sdkman install
 * nvm install
 * add pacman color
 * edit grubconfig to always show boot menu
+* docker: add user to group `docker` → `sudo usermod -aG docker $USER`
+  * how to get user in ansible?
+* docker: enable and start daemon
 * merge this repo and the notes for setting up a new laptop?
 * create a template for firefox desktop files and loop them
 
