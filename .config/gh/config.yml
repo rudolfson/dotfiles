@@ -11,7 +11,7 @@ aliases:
     co: pr checkout
     review: |
         api -XGET search/issues
-        -f q='team-review-requested:rewe-digital-content/team-laser-dolphins is:pr is:open archived:false -author:app/dependabot -author:@me'
+        -f q='team-review-requested:rewe-digital-ecom/team-pecunia is:pr is:open archived:false -author:app/dependabot -author:@me'
         --template '{{range .items -}}
         {{.number | printf "#%v" | autocolor "green" }} {{.title | autocolor "white"}} ({{timeago .created_at | autocolor "yellow" }})
         → {{.html_url}} {{print "\n\n" -}}

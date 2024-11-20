@@ -9,8 +9,11 @@
 
 - name: Create necessary directories
   ansible.builtin.file:
-    path: "{{ destination }}/.local/bin"
+    path: "{{ destination }}/{{ item }}"
     state: directory
+  loop:
+    - .local/bin
+    - .config/gh
 
 - name: Link dot files and directories
   ansible.builtin.file:
@@ -38,6 +41,7 @@
     # configs
     - .config/digikamrc
     - .config/digikam_systemrc
+    - .config/gh/config.yml
     - .config/kitty
     - .config/nvim
 - name: Init submodules

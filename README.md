@@ -22,6 +22,10 @@ To skip the swapfile setup use
 * nvm install
 * add pacman color
 * edit grubconfig to always show boot menu
+  * edit `/etc/default/grub`
+  * set `GRUB_TIMEOUT_STYLE=menu`
+  * set `GROUP_TIMEOUT=3`
+  * aktualisieren mit `sudo update-grub`
 * docker: add user to group `docker` → `sudo usermod -aG docker $USER`
   * how to get user in ansible?
 * docker: enable and start daemon
