@@ -7,13 +7,15 @@
     - ansible/config.yml
 
   tasks:
-    - import_tasks: ansible/01_update.yml
-    - import_tasks: ansible/02_base_packages.yml
-    - import_tasks: ansible/03_swap.yml
+    - import_tasks: ansible/update.yml
+    - import_tasks: ansible/base_packages.yml
+    - import_tasks: ansible/update_grub.yml
+    - import_tasks: ansible/swap.yml
       tags: swap
-    - import_tasks: ansible/04_fonts.yml
-    - import_tasks: ansible/05_other_packages.yml
-    - import_tasks: ansible/06_dev_packages.yml
-    - import_tasks: ansible/07_flatpak_packages.yml
+    - import_tasks: ansible/fonts.yml
+    - import_tasks: ansible/other_packages.yml
+    - import_tasks: ansible/dev_packages.yml
+    - import_tasks: ansible/docker.yml
+    - import_tasks: ansible/flatpak_packages.yml
     - import_tasks: ansible/dotfiles.yml
 

@@ -27,6 +27,7 @@ other_packages:
   - bash-completion
   - bat # cat with line numbers and syntax highlighting
   - btop # alternative to htop
+  - dog # DNS lookup tool
   - evolution # mail client
   - fd # alternative to find
   - firefox

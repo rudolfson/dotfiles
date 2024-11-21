@@ -1,0 +1,14 @@
+---
+- name: Install base packages
+  become: true
+  community.general.pacman:
+    name: "{{ base_packages }}"
+    state: present
+  changed_when: false
+
+- name: Activate colors in pacman / yay / paru
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/pacman.conf
+    regexp: '^#Color'
+    line: 'Color'

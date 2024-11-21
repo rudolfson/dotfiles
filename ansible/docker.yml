@@ -1,0 +1,17 @@
+---
+#
+# Enable and start docker daemon. Enable current user for docker.
+#
+
+- name: Ensure docker service is enabled and running
+  become: true
+  ansible.builtin.service:
+    name: docker
+    enabled: true
+    state: started
+
+- name: Add current user to docker group
+  ansible.builtin.user:
+    name: "{{ ansible_user_id }}"
+    groups: docker
+    append: true

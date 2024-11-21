@@ -20,16 +20,8 @@ To skip the swapfile setup use
 * oh-my-zsh needs an install first
 * sdkman install
 * nvm install
-* add pacman color
-* edit grubconfig to always show boot menu
-  * edit `/etc/default/grub`
-  * set `GRUB_TIMEOUT_STYLE=menu`
-  * set `GROUP_TIMEOUT=3`
-  * aktualisieren mit `sudo update-grub`
-* docker: add user to group `docker` → `sudo usermod -aG docker $USER`
-  * how to get user in ansible?
-* docker: enable and start daemon
 * merge this repo and the notes for setting up a new laptop?
 * create a template for firefox desktop files and loop them
+* tag items with `work` or `private` where applicable
 
 https://github.com/jothi-prasath/archlinux-playbook/tree/master is a nice playbook sample

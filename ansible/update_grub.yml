@@ -1,0 +1,24 @@
+---
+#
+# Configure grub to always show the boot menu
+#
+- name: Always show grub menu
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/default/grub
+    regexp: '^GRUB_TIMEOUT_STYLE='
+    line: 'GRUB_TIMEOUT_STYLE=menu'
+  register: grub_timeout_style
+
+- name: Set menu timeout
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/default/grub
+    regexp: '^GRUB_TIMEOUT='
+    line: 'GRUB_TIMEOUT=3'
+  register: grub_timeout
+
+- name: Update grub if necessary
+  become: true
+  command: update-grub
+  when: grub_timeout_style.changed or grub_timeout.changed

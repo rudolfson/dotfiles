@@ -1,4 +1,7 @@
 ---
+#
+# Update mirrors and package cache
+#
 - name: Update mirrors
   become: true
   command: pacman-mirrors --country Germany
