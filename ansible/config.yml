@@ -29,6 +29,7 @@ other_packages:
   - btop # alternative to htop
   - dog # DNS lookup tool
   - evolution # mail client
+  - encfs # encrypted directories
   - fd # alternative to find
   - firefox
   - flatpak
