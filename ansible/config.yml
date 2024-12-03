@@ -53,6 +53,8 @@ other_packages:
 dev_packages:
   - docker
   - docker-compose
+  - podman
+  - podman-compose
   - github-cli
   - gnu-netcat
   - intellij-idea-ultimate-edition
@@ -61,6 +63,7 @@ dev_packages:
   - luarocks
   - python
   - python-pip
+  - tig
   - visual-studio-code-bin
 
 flatpak_packages:
