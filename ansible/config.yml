@@ -51,6 +51,7 @@ other_packages:
   - zsh
 
 dev_packages:
+  - curlie
   - docker
   - docker-compose
   - google-cloud-cli
