@@ -53,14 +53,15 @@ other_packages:
 dev_packages:
   - docker
   - docker-compose
-  - podman
-  - podman-compose
+  - google-cloud-cli
   - github-cli
   - gnu-netcat
   - intellij-idea-ultimate-edition
   - kcat
   - lazygit
   - luarocks
+  - podman
+  - podman-compose
   - python
   - python-pip
   - tig
