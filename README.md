@@ -20,6 +20,12 @@ To skip the swapfile setup use
 * oh-my-zsh needs an install first
 * sdkman install
 * nvm install
+* install terraform 1.5.7
+  ```shell
+  curl -s https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip | bsdtar -xf- -C $HOME/.local/bin`
+  chmod u+x $HOME/.local/bin/terraform
+  ```
+
 * merge this repo and the notes for setting up a new laptop?
 * create a template for firefox desktop files and loop them
 * tag items with `work` or `private` where applicable

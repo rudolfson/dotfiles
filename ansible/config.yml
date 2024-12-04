@@ -56,7 +56,7 @@ dev_packages:
   - docker-compose
   - google-cloud-cli
   - github-cli
-  - gnu-netcat
+  - openbsd-netcat
   - intellij-idea-ultimate-edition
   - kcat
   - lazygit
@@ -65,7 +65,7 @@ dev_packages:
   - podman-compose
   - python
   - python-pip
-  - tig
+  - tig # terminal ui for git
   - visual-studio-code-bin
 
 flatpak_packages:
