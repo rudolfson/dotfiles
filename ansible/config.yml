@@ -59,6 +59,7 @@ dev_packages:
   - github-cli
   - openbsd-netcat
   - intellij-idea-ultimate-edition
+  - jq
   - kcat
   - lazygit
   - luarocks
