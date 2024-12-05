@@ -33,6 +33,7 @@ other_packages:
   - fd # alternative to find
   - firefox
   - flatpak
+  - flatseal # permission manager for flatpak
   - git-delta # show diffs like in git PRs
   - gnome-shell-extension-system-monitor-next-git
   - kitty # GPU powered terminal
