@@ -44,6 +44,7 @@ other_packages:
   - qrencode
   - ripgrep # alternative to grep, command is rg
   - spotify
+  - shutter # screenshot editor
   - timew
   - tmux
   - tree
