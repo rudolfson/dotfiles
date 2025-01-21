@@ -2593,7 +2593,7 @@
 
 
 # BEGIN_KITTY_THEME
-# Solarized Light
+# CLRS
 include current-theme.conf
 # END_KITTY_THEME
 

@@ -47,6 +47,7 @@ other_packages:
   - shutter # screenshot editor
   - timew
   - tmux
+  - tmuxp
   - tree
   - vim
   - xclip

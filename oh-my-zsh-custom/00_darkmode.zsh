@@ -30,7 +30,7 @@ _adjust_environment_to_dark_mode() {
         kitty +kitten themes --reload-in=all "Gruvbox Dark"
     } else {
         export BAT_THEME=gruvbox-light
-        kitty +kitten themes --reload-in=all "Solarized Light"
+        kitty +kitten themes --reload-in=all "CLRS"
     }
 }
 

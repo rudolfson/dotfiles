@@ -1,0 +1,6 @@
+session_name: default
+windows:
+  - window_name: Notizen
+    panes:
+      - nvim ~/Notes/rewe/aktuell.md
+  - window_name: Shell
