@@ -35,6 +35,7 @@ Image Sort Order=2
 Image Sorting=0
 Item Left Click Action=0
 Preview Convert To Eight Bit=false
+Preview Image Smooth Scaled=true
 Preview Load Full Image Size=false
 Preview Scale Fit To Window=false
 Preview Show Icons=true
@@ -898,7 +899,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwJPT08=
+Database Encrypted Password=AwJ+fn4=
 Database Hostname=
 Database Name=/home/lars/Pictures/
 Database Name Face=/home/lars/Pictures/
@@ -970,7 +971,7 @@ Web GPS Locator=0
 
 [Digikam Right Sidebar][GPS Properties Tab][Map Widget]
 Backend=marble
-Center=geo:52,6
+Center=geo:0,0
 GoogleMaps Map Type=ROADMAP
 GoogleMaps Show Map Type Control=true
 GoogleMaps Show Navigation Control=true
@@ -1097,6 +1098,11 @@ CaseSensitive=0
 
 [Face Detection Settings]
 Detection Accuracy=0.7
+Face Detection Accuracy=7
+Face Detection Model=2
+Face Detection Size=3
+Face Recognition Accuracy=7
+Face Recognition Model=1
 Use Yolo V3=false
 
 [Face Management Settings]
@@ -1114,7 +1120,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=134,38
+TagComboBox-Selection=128,38
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1150,10 +1156,10 @@ Last search album tag relation=0
 Last search results restriction=0
 Lower bound for minimum similarity=40
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=38
+TagComboBox-CurrentIndex=128
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=38
+TagComboBox-Selection=128
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
@@ -1200,7 +1206,7 @@ SplitterState=AAAA/wAAAAEAAAACAAABfwAAAOAB/////wEAAAACAA==
 
 [GPS Search Sidebar][GPSSearch Map Widget]
 Backend=marble
-Center=geo:52,6
+Center=geo:0,0
 GoogleMaps Map Type=ROADMAP
 GoogleMaps Show Map Type Control=true
 GoogleMaps Show Navigation Control=true
@@ -1219,7 +1225,7 @@ Show Thumbnails=true
 Show numbers on items=true
 Thumbnail Grouping Radius=30
 Thumbnail Size=60
-Zoom=marble:1802
+Zoom=marble:900
 
 [GPSSearchViewSearchGPSBar Search Text Tool]
 CaseSensitive=0
@@ -1458,7 +1464,7 @@ Web GPS Locator=0
 
 [ImageViewer Settings][Right Sidebar][GPS Properties Tab][Map Widget]
 Backend=marble
-Center=geo:52,6
+Center=geo:0,0
 GoogleMaps Map Type=ROADMAP
 GoogleMaps Show Map Type Control=true
 GoogleMaps Show Navigation Control=true
@@ -1667,7 +1673,7 @@ Web GPS Locator=0
 
 [LightTable Settings][Left Sidebar][GPS Properties Tab][Map Widget]
 Backend=marble
-Center=geo:52,6
+Center=geo:0,0
 GoogleMaps Map Type=ROADMAP
 GoogleMaps Show Map Type Control=true
 GoogleMaps Show Navigation Control=true
@@ -1749,7 +1755,7 @@ Web GPS Locator=0
 
 [LightTable Settings][Right Sidebar][GPS Properties Tab][Map Widget]
 Backend=marble
-Center=geo:52,6
+Center=geo:0,0
 GoogleMaps Map Type=ROADMAP
 GoogleMaps Show Map Type Control=true
 GoogleMaps Show Navigation Control=true
@@ -2249,7 +2255,7 @@ Sort Order=0
 
 [mainwindow_mapwidgetview][Central Map Widget]
 Backend=marble
-Center=geo:52,6
+Center=geo:0,0
 GoogleMaps Map Type=ROADMAP
 GoogleMaps Show Map Type Control=true
 GoogleMaps Show Navigation Control=true
