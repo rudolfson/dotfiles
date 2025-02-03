@@ -1,0 +1,6 @@
+[Unit]
+Description=Sync local notes to gdrive via rclone
+
+[Service]
+ExecStart=/usr/bin/rclone sync /home/lheller/Nextcloud/Notes/rewe gdrive:/Notes
+Type=oneshot

@@ -45,6 +45,7 @@
     - .config/kitty
     - .config/nvim
     - .config/tmuxp
+    - .config/systemd/user
 - name: Init submodules
   ansible.builtin.command:
     cmd: "git submodule {{ item }}"
