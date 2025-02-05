@@ -3,5 +3,5 @@
 #
 
 export EDITOR="nvim"
-export PAGER="less -F"
+export PAGER="less -FIRX"
 

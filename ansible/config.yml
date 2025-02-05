@@ -52,6 +52,7 @@ other_packages:
   - tree
   - vim
   - xclip
+  - zk # zettelkasten tool
   - zsh
 
 dev_packages:
