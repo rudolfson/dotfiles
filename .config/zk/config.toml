@@ -7,7 +7,7 @@ dir = "~/Notes"
 
 # Language used when writing notes.
 # This is used to generate slugs or with date formats.
-language = "de"
+language = "en"
 
 # The default title used for new note, if no `--title` flag is provided.
 default-title = "Untitled"
