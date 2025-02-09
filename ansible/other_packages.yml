@@ -1,7 +1,22 @@
 ---
 - name: Install other packages
-  #become: true
   kewlfft.aur.aur:
     name: "{{ other_packages }}"
     use: yay
     state: present
+  tags: always
+
+- name: Install work only packages
+  kewlfft.aur.aur:
+    name: "{{ work_packages }}"
+    use: yay
+    state: present
+  tags: work
+
+- name: Install private only packages
+  kewlfft.aur.aur:
+    name: "{{ private_packages }}"
+    use: yay
+    state: present
+  tags: private
+

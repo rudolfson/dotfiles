@@ -37,6 +37,7 @@ other_packages:
   - fzf # command-line fuzzy finder
   - git-delta # show diffs like in git PRs
   - gnome-shell-extension-system-monitor-next-git
+  - hugo
   - kitty # GPU powered terminal
   - linux-headers
   - neovim
@@ -62,7 +63,6 @@ dev_packages:
   - google-cloud-cli
   - github-cli
   - openbsd-netcat
-  - intellij-idea-ultimate-edition
   - jq
   - kcat
   - lazygit
@@ -73,6 +73,15 @@ dev_packages:
   - python-pip
   - tig # terminal ui for git
   - visual-studio-code-bin
+
+# packages necessary at work only
+work_packages: 
+  - intellij-idea-ultimate-edition
+  - glab
+
+# packages necessary on private computer only
+private_packages:
+  - digikam
 
 flatpak_packages:
   - com.discordapp.Discord
