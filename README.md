@@ -14,6 +14,7 @@ To skip the swapfile setup use
 ```
 
 ## Improvements
+
 * commands to install ansible-core
 * download dotfiles from github
 * needs SSH keys for github to clone submodules
@@ -21,6 +22,7 @@ To skip the swapfile setup use
 * sdkman install
 * nvm install
 * install terraform 1.5.7
+
   ```shell
   curl -s https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip | bsdtar -xf- -C $HOME/.local/bin`
   chmod u+x $HOME/.local/bin/terraform
@@ -30,4 +32,6 @@ To skip the swapfile setup use
 * create a template for firefox desktop files and loop them
 * tag items with `work` or `private` where applicable
 
-https://github.com/jothi-prasath/archlinux-playbook/tree/master is a nice playbook sample
+<https://github.com/jothi-prasath/archlinux-playbook/tree/master> is a nice playbook sample
+
+* add install of ducctl for work
