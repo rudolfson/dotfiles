@@ -26,6 +26,7 @@ font_packages:
 other_packages:
   - bash-completion
   - bat # cat with line numbers and syntax highlighting
+  - borg
   - btop # alternative to htop
   - dog # DNS lookup tool
   - evolution # mail client
