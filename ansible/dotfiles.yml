@@ -16,6 +16,7 @@
     - .config/git
     - .config/ideavim
     - .config/systemd
+    - .config/tmux
     - .local/bin
 
 - name: Link dot files and directories
@@ -33,7 +34,6 @@
     - .git-prompt.sh 
     - .gvimrc 
     - .profile 
-    - .tmux.conf 
     - .vim 
     - .zshrc
     # local binaries
@@ -46,6 +46,7 @@
     - .config/kitty
     - .config/nvim
     - .config/systemd/user
+    - .config/tmux/tmux.conf
     - .config/tmuxp
     - .config/zk
 - name: Init submodules
