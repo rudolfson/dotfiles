@@ -12,9 +12,11 @@
     path: "{{ destination }}/{{ item }}"
     state: directory
   loop:
-    - .local/bin
     - .config/gh
+    - .config/git
+    - .config/ideavim
     - .config/systemd
+    - .local/bin
 
 - name: Link dot files and directories
   ansible.builtin.file:
@@ -28,14 +30,11 @@
     - .bash_profile 
     - .bashrc 
     - .git-completion.bash 
-    - .gitconfig 
     - .git-prompt.sh 
     - .gvimrc 
-    - .ideavimrc 
     - .profile 
     - .tmux.conf 
     - .vim 
-    - .vimrc
     - .zshrc
     # local binaries
     - .local/bin/jcurl
@@ -43,10 +42,11 @@
     - .config/digikamrc
     - .config/digikam_systemrc
     - .config/gh/config.yml
+    - .config/git
     - .config/kitty
     - .config/nvim
-    - .config/tmuxp
     - .config/systemd/user
+    - .config/tmuxp
     - .config/zk
 - name: Init submodules
   ansible.builtin.command:
