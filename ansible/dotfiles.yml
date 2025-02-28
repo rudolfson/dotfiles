@@ -38,6 +38,7 @@
     - .zshrc
     # local binaries
     - .local/bin/jcurl
+    - .local/bin/borg-backup
     # configs
     - .config/digikamrc
     - .config/digikam_systemrc
