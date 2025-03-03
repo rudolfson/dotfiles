@@ -16,23 +16,38 @@ trap 'echo $( date ) Backup interrupted >&2; exit 2' INT TERM
 
 info "Starting backup"
 borg create \
-  --verbose \
-  --filter AME \
-  --list \
   --stats \
+  --filter AME \
+  --verbose \
+  --list \
   --show-rc \
   --compression lz4 \
   --exclude-caches \
-  --exclude '/home/*/.cache/*' \
-  --exclude '/var/cache/*' \
-  --exclude '/var/tmp/*' \
+  --exclude 'home/lars/Downloads' \
+  --exclude 'home/lars/Encfs' \
+  --exclude 'home/lars/tmp' \
+  --exclude 'home/lars/.mozilla' \
+  --exclude 'home/lars/.var' \
+  --exclude 'home/lars/.config/Code' \
+  --exclude 'home/lars/.config/Code - OSS' \
+  --exclude 'home/lars/.config/discord' \
+  --exclude 'home/lars/.config/google-chrome' \
+  --exclude 'home/lars/.config/Slack' \
+  --exclude 'home/lars/.config/spotify' \
+  --exclude 'home/lars/.config/unity3d' \
+  --exclude 'home/lars/.local/share/nvim' \
+  --exclude 'home/lars/.local/share/digikam' \
+  --exclude '**/.cache' \
+  --exclude '**/[Cc]ache' \
+  --exclude '**/__pycache__' \
+  --exclude '**/venv' \
+  --exclude '**/target' \
   --exclude '**/._sync_*' \
   \
   ::$ARCHIVE \
-  $HOME/Nextcloud \
-  $HOME/Pictures \
-  $HOME/Music \
-  $HOME/.local/share/shotwell
+  $HOME
+
+exit $?
 
 backup_exit=$?
 
@@ -45,7 +60,7 @@ info "Pruning repository"
 
 borg prune \
   --list \
-  --prefix 'home-' \
+  --glob-archives 'home-*' \
   --show-rc \
   --keep-daily 3 \
   --keep-weekly 3 \
