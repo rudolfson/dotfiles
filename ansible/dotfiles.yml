@@ -47,7 +47,7 @@
     - .config/kitty
     - .config/nvim
     - .config/systemd/user
-    - .config/tmux/tmux.conf
+    - .config/tmux
     - .config/tmuxp
     - .config/zk
 - name: Init submodules
