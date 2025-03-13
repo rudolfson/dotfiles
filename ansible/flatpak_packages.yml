@@ -1,5 +1,18 @@
-- name: Install Flatpak packages for the current user
+---
+#
+# Install flatpak packages
+#
+- name: Define the list of flatpak packages to install for work
+  ansible.builtin.set_fact:
+    flatpak_packages: "{{ flatpak.common + flatpak.work }}"
+  tags: work
+- name: Define the list of flatpak packages to install for private
+  ansible.builtin.set_fact:
+    flatpak_packages: "{{ flatpak.common + flatpak.private }}"
+  tags: private
+- name: Install flatpak packages
   flatpak:
     name: "{{ item }}"
     state: present
   loop: "{{ flatpak_packages }}"
+  tags: always

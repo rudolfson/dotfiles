@@ -2,91 +2,92 @@
 swapfile_path: /swapfile
 swapfile_size: 16G
 
-base_packages:
-  - base-devel
-  - curl
-  - git
-  - wget
-  - yay
+packages:
+  base:
+    - base-devel
+    - curl
+    - git
+    - wget
+    - yay
 
-font_packages:
-  - adobe-source-code-pro-fonts
-  - adobe-source-han-sans-otc-fonts # for CJK
-  - adobe-source-sans-fonts
-  - noto-fonts
-  - noto-fonts-emoji # for emoji
-  - ttf-dejavu
-  - ttf-droid
-  - ttf-opensans
-  - ttf-roboto
-  - ttf-sourcecodepro-nerd
-  - ttf-nerd-fonts-symbols
-  - ttf-ubuntu-font-family
+  fonts:
+    - adobe-source-code-pro-fonts
+    - adobe-source-han-sans-otc-fonts # for CJK
+    - adobe-source-sans-fonts
+    - noto-fonts
+    - noto-fonts-emoji # for emoji
+    - ttf-dejavu
+    - ttf-droid
+    - ttf-opensans
+    - ttf-roboto
+    - ttf-sourcecodepro-nerd
+    - ttf-nerd-fonts-symbols
+    - ttf-ubuntu-font-family
 
-other_packages:
-  - bash-completion
-  - bat # cat with line numbers and syntax highlighting
-  - borg
-  - btop # alternative to htop
-  - dog # DNS lookup tool
-  - evolution # mail client
-  - encfs # encrypted directories
-  - fd # fast alternative to find
-  - firefox
-  - flatpak
-  - flatseal # permission manager for flatpak
-  - fzf # command-line fuzzy finder
-  - git-delta # show diffs like in git PRs
-  - gnome-shell-extension-system-monitor-next-git
-  - hugo
-  - kitty # GPU powered terminal
-  - linux-headers
-  - neovim
-  - # nextcloud-client # we'll use the flatpak version
-  - paru
-  - qrencode
-  - ripgrep # alternative to grep, command is rg
-  - spotify
-  - shutter # screenshot editor
-  - timew
-  - tmux
-  - tmuxp
-  - tree
-  - vim
-  - xclip
-  - zk # zettelkasten tool
-  - zsh
+  dev:
+    - curlie
+    - docker
+    - docker-compose
+    - google-cloud-cli
+    - github-cli
+    - openbsd-netcat
+    - jq
+    - kcat
+    - lazygit
+    - luarocks
+    - podman
+    - podman-compose
+    - python
+    - python-pip
+    - tig # terminal ui for git
+    - visual-studio-code-bin
 
-dev_packages:
-  - curlie
-  - docker
-  - docker-compose
-  - google-cloud-cli
-  - github-cli
-  - openbsd-netcat
-  - jq
-  - kcat
-  - lazygit
-  - luarocks
-  - podman
-  - podman-compose
-  - python
-  - python-pip
-  - tig # terminal ui for git
-  - visual-studio-code-bin
+  common:
+    - bash-completion
+    - bat # cat with line numbers and syntax highlighting
+    - borg
+    - btop # alternative to htop
+    - dog # DNS lookup tool
+    - evolution # mail client
+    - encfs # encrypted directories
+    - fd # fast alternative to find
+    - firefox
+    - flatpak
+    - flatseal # permission manager for flatpak
+    - fzf # command-line fuzzy finder
+    - git-delta # show diffs like in git PRs
+    - gimp
+    - kitty # GPU powered terminal
+    - linux-headers
+    - neovim
+    - # nextcloud-client # we'll use the flatpak version
+    - paru
+    - qrencode
+    - ripgrep # alternative to grep, command is rg
+    - spotify
+    - shutter # screenshot editor
+    - timew
+    - tmux
+    - tmuxp
+    - tree
+    - vim
+    - xclip
+    - zk # zettelkasten tool
+    - zsh
+  work: # packages necessary at work only
+    - intellij-idea-ultimate-edition
+    - glab
+  private: # packages necessary on private computer only
+    - digikam
+    - qmapshack
 
-# packages necessary at work only
-work_packages: 
-  - intellij-idea-ultimate-edition
-  - glab
+flatpak:
+  common:
+    - com.google.Chrome
+    - org.keepassxc.KeePassXC
+    - com.slack.Slack
+    - com.nextcloud.desktopclient.nextcloud
+  work: []
+  private:
+    - com.discordapp.Discord
 
-# packages necessary on private computer only
-private_packages:
-  - digikam
-
-flatpak_packages:
-  - com.discordapp.Discord
-  - com.google.Chrome
-  - org.keepassxc.KeePassXC
-  - com.slack.Slack
-  - com.nextcloud.desktopclient.nextcloud
