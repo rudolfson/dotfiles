@@ -78,6 +78,7 @@ packages:
   work: # packages necessary at work only
     - intellij-idea-ultimate-edition # ubuntu: via snap
     - glab
+    - rclone # for gdrive sync
   private: # packages necessary on private computer only
     - digikam
     - qmapshack
