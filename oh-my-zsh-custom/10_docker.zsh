@@ -2,5 +2,14 @@
 # All Docker related stuff
 #
 
-alias dcu='docker-compose up'
+
+local dockercompose
+if whence docker-compose > /dev/null
+then
+  dockercompose=docker-compose
+else
+  dockercompose="docker compose"
+fi
+alias dcu="$dockercompose up"
 alias dspv='docker system prune --volumes=true'
+unset dockercompose
