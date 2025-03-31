@@ -20,3 +20,9 @@ export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME/jupyter"
 export LESSHISTFILE="$XDG_STATE_HOME/less/history"
 export DOT_SAGE="$XDG_CONFIG_HOME/sage"
 
+#
+# enhance path
+#
+typeset -U path
+path+="$HOME/.local/bin"
+

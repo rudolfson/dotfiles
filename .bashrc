@@ -30,7 +30,7 @@ gclean() {
 PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]\n\[\033[32m\]\u@\h \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ '
 
 # PATH additions
-for p in "$HOME/bin" "$HOME/go/bin"; do
+for p in "$HOME/.local/bin" "$HOME/go/bin"; do
     [[ -d $p ]] && PATH=$PATH:$p
 done
 export PATH
