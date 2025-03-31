@@ -36,6 +36,7 @@ packages:
     - kcat
     - lazygit # ubuntu: manual install, see https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu
     - luarocks
+    # nvm: manual → https://github.com/nvm-sh/nvm
     - podman
     - podman-compose
     - python # ubuntu: python3
