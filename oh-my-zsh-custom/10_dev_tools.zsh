@@ -9,3 +9,8 @@ jwtd() {
     fi
 }
 
+kclm() {
+    if [[ -x $(command -v jq) ]]; then
+        jq -r .message <<< "${1}" | jq
+    fi
+}
