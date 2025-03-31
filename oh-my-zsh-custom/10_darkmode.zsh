@@ -7,7 +7,8 @@
 
 # switch dark mode
 switchdm() {
-    current=$(_query_dark_mode)
+    local current=$(_query_dark_mode)
+    local newmode
     if [[ "$current" == "'prefer-dark'" ]] {
         newmode="default"
     } else {
@@ -24,7 +25,7 @@ _query_dark_mode() {
 
 # adjust env variables, terminal colors, etc. according to current mode
 _adjust_environment_to_dark_mode() {
-    current=$(_query_dark_mode)
+    local current=$(_query_dark_mode)
     if [[ "$current" == "'prefer-dark'" ]] {
         export BAT_THEME=gruvbox-dark
         kitty +kitten themes --reload-in=all "Gruvbox Dark"
