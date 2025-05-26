@@ -63,6 +63,7 @@ packages:
     - linux-headers
     - neovim
     - # nextcloud-client # we'll use the flatpak version
+    - # onedrive see https://wiki.ubuntuusers.de/OneDrive/
     - paru
     - qrencode
     - ripgrep # alternative to grep, command is rg
