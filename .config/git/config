@@ -1,6 +1,7 @@
 [user]
-	email = l.heller@tarent.de
+	email = lars.heller@rewe-group.com
 	name = Lars Heller
+	signingkey = 746B4C788952D8D9
 [push]
 	default = simple
 
@@ -12,7 +13,7 @@
     tagswithdates = log --tags --simplify-by-decoration --pretty='format:%ai %d'
 
 [core]
-	editor = '/usr/bin/nvim'
+	editor = nvim
 	autocrlf = input
     pager = '/usr/bin/delta'
 [pull]
@@ -47,3 +48,10 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[credential "https://gitlab.rewe.local"]
+	helper = 
+	helper = !/usr/bin/glab auth git-credential
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true

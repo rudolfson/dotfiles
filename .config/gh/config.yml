@@ -16,6 +16,13 @@ aliases:
         {{.number | printf "#%v" | autocolor "green" }} {{.title | autocolor "white"}} ({{timeago .created_at | autocolor "yellow" }})
         → {{.html_url}} {{print "\n\n" -}}
         {{end}}'
+    dependabot: |
+        api -XGET search/issues
+        -f q='team-review-requested:rewe-digital-ecom/team-pecunia is:pr is:open archived:false author:app/dependabot'
+        --template '{{range .items -}}
+        {{.number | printf "#%v" | autocolor "green" }} {{.title | autocolor "white"}} ({{timeago .created_at | autocolor "yellow" }})
+        → {{.html_url}} {{print "\n\n" -}}
+        {{end}}'
     mine: |
         !gh search prs \
         --author @me \
