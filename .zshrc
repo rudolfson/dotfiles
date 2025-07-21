@@ -71,7 +71,9 @@ export ZSH_CUSTOM=$HOME/.dotfiles/oh-my-zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    gcloud
     git
+    kubectl
     rust
     z
     zsh-autosuggestions
