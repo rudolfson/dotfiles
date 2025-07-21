@@ -1,7 +1,10 @@
 #
-# Utilities to work with JWTs
+# Helpful commands when developing.
 #
 
+#
+# Decode a JWT, call as `jwtd '<JWT>'`
+#
 jwtd() {
     if [[ -x $(command -v jq) ]]; then
         local header=$(jq -R 'split(".") | .[0] | @base64d | fromjson' <<< "${1}")
@@ -17,8 +20,22 @@ jwtd() {
     fi
 }
 
+#
+# Format a Keycloak message.
+#
 kclm() {
     if [[ -x $(command -v jq) ]]; then
         jq -r .message <<< "${1}" | jq
     fi
+}
+
+#
+# Get the E-Mail otp code. It does so by fetching the recorded requests from wiremock.
+#
+rewe_email_opt() {
+  curl -s localhost:8000/__admin/requests \
+    | jq -r '.requests[] | select (.request.url == "/api/mails/login_email_otp_code") | .request.body' \
+    | jq -r .fields.t_code \
+    | tee $TTY \
+    | c
 }
