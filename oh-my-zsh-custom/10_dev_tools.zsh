@@ -39,3 +39,16 @@ rewe_email_opt() {
     | tee $TTY \
     | c
 }
+
+#
+# Get the image tag of the deployed rewe keycloak and 
+#
+rewe_sso_pre_version() {
+    git log --oneline -1 $(
+      kubectl get pods -n sso-pre -o jsonpath='{.items[*].spec.containers[*].image}' \
+        | tr ' ' '\n' \
+        | grep keycloak \
+        | cut -d':' -f 2 \
+        | uniq
+      )
+}
