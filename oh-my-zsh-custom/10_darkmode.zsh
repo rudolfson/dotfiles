@@ -28,10 +28,13 @@ _adjust_environment_to_dark_mode() {
     local current=$(_query_dark_mode)
     if [[ "$current" == "'prefer-dark'" ]] {
         export BAT_THEME=gruvbox-dark
+        export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=240
         kitty +kitten themes --reload-in=all "Gruvbox Dark"
+
     } else {
         export BAT_THEME=gruvbox-light
-        kitty +kitten themes --reload-in=all "Alabaster"
+        export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=250
+        kitty +kitten themes --reload-in=all "Gnome Light"
     }
 }
 
