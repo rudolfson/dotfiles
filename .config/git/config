@@ -2,6 +2,7 @@
 	email = lars.heller@rewe-group.com
 	name = Lars Heller
 	signingkey = 746B4C788952D8D9
+
 [push]
 	default = simple
 
@@ -55,3 +56,7 @@
 	gpgsign = true
 [tag]
 	gpgSign = true
+
+# overwrite with local settings to support different config for home and work
+[include]
+  path = "~/.gitconfig.local"
