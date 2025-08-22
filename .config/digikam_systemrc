@@ -1,8 +1,13 @@
 [System]
 disableOpenCL=true
+dnnOpenCLTested=false
+enableAIAutoTools=true
 enableAesthetic=true
 enableAutoTags=true
+enableDnnOpenCL=false
 enableFaceEngine=true
+enableHWTConv=false
+enableHWVideo=false
 enableLogging=false
 enableOpenCL=false
 proxyAuth=false
