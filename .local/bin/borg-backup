@@ -37,6 +37,7 @@ borg create \
   --exclude 'home/lars/.config/unity3d' \
   --exclude 'home/lars/.local/share/nvim' \
   --exclude 'home/lars/.local/share/digikam' \
+  --exclude 'home/lars/.local/share/Trash' \
   --exclude '**/.cache' \
   --exclude '**/[Cc]ache' \
   --exclude '**/__pycache__' \
@@ -47,7 +48,7 @@ borg create \
   ::$ARCHIVE \
   $HOME
 
-exit $?
+#exit $?
 
 backup_exit=$?
 
