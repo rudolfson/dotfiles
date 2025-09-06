@@ -34,7 +34,7 @@
     - .git-prompt.sh 
     - .gvimrc 
     - .profile 
-    - .vim 
+#    - .vim 
     - .zshrc
     # local binaries
     - .local/bin/jcurl

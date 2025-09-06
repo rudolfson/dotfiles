@@ -15,12 +15,12 @@
         fail_msg: "You need use either tag 'work' or 'private'"
       tags:
         - always
-    - import_tasks: ansible/update.yml
-      tags: always
-    - import_tasks: ansible/update_grub.yml
-      tags: always
-    - import_tasks: ansible/swap.yml
-      tags: swap
+#    - import_tasks: ansible/update.yml
+#      tags: always
+#    - import_tasks: ansible/update_grub.yml
+#      tags: always
+#    - import_tasks: ansible/swap.yml
+#      tags: swap
     - import_tasks: ansible/install_packages.yml
     - import_tasks: ansible/docker.yml
       tags: always

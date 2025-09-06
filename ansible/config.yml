@@ -27,22 +27,22 @@ packages:
   dev:
     - curlie # not using this
     - docker # ubuntu: docker.io
-    - docker-compose # ubuntu: docker-compose-v2
+#    - docker-compose # ubuntu: docker-compose-v2
     - google-cloud-cli
     - github-cli # ubuntu: gh
     - openbsd-netcat # ubuntu: netcat-openbsd
     - fnt # ubuntu: font download managher
     - jq
-    - kcat
+#    - kcat
     - lazygit # ubuntu: manual install, see https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu
     - luarocks
     # nvm: manual → https://github.com/nvm-sh/nvm
-    - podman
-    - podman-compose
+#    - podman
+#    - podman-compose
     - python # ubuntu: python3
     - python-pip # ubuntu: python3-pip
     - tig # terminal ui for git
-    - visual-studio-code-bin # ubuntu: via snap
+#    - visual-studio-code-bin # ubuntu: via snap
 
   common:
     - bash-completion
@@ -82,16 +82,16 @@ packages:
     - glab
     - rclone # for gdrive sync
   private: # packages necessary on private computer only
-    - digikam
-    - qmapshack
+    - # digikam
+    - # qmapshack
 
 flatpak:
   common:
     - com.google.Chrome
     - org.keepassxc.KeePassXC
-    - com.slack.Slack
     - com.nextcloud.desktopclient.nextcloud
-  work: []
+  work:
+    - com.slack.Slack
   private:
     - com.discordapp.Discord
 
