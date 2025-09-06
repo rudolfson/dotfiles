@@ -7,10 +7,4 @@ return {
       auto_integrations = true,
     },
   },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  },
 }
