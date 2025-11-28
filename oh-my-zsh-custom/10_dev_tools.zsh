@@ -30,9 +30,17 @@ kclm() {
 }
 
 #
+# List requests sent the mail service mock.
+#
+wm_mails() {
+  http localhost:8000/__admin/requests \
+    | jq '.requests.[].request | select(.url | contains("/api/mails/")) | {url, body: (.body | fromjson)}' 
+}
+
+#
 # Get the E-Mail otp code. It does so by fetching the recorded requests from wiremock.
 #
-rewe_email_opt() {
+wm_otp() {
   curl -s localhost:8000/__admin/requests \
     | jq -r '.requests[] | select (.request.url == "/api/mails/login_email_otp_code") | .request.body' \
     | jq -r .fields.t_code \
