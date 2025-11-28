@@ -31,14 +31,12 @@ _adjust_environment_to_dark_mode() {
     if [[ "$current" == "'prefer-dark'" ]] {
         export BAT_THEME=gruvbox-dark
         export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=240
-        kitty +kitten themes --reload-in=all "Gruvbox Dark"
         if _is_desktop_environment xfce; then
             gsettings set org.gnome.desktop.interface gtk-theme Matcha-dark-azul
         fi
     } else {
         export BAT_THEME=gruvbox-light
         export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=250
-        kitty +kitten themes --reload-in=all "Gnome Light"
         if _is_desktop_environment xfce; then
             gsettings set org.gnome.desktop.interface gtk-theme Matcha-light-azul
         fi
