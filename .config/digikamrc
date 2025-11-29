@@ -88,10 +88,10 @@ TreeView Font=Cantarell,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Update Type=0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=800
-Expansion=0,1,14,15,17,21,23,25,26,33,184,185,640,657,711,811,800,815,791,792,793,794,795,796,797,798,161,814
+CurrentIndex=-2
+Expansion=0,1,14,15,17,21,23,25,26,33,184,185,640,657,711,811,800,815,791,792,793,794,795,796,797,798,161,814,-2
 RestoreChecked=false
-Selection=800
+Selection=-2
 SortColumn=0
 SortOrder=0
 
@@ -126,7 +126,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=74
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=74
+TagComboBox-Selection=133,67
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -252,6 +252,9 @@ ManagedView=true
 ProofingRenderingIntent=3
 RenderingIntent=0
 WorkProfileFile[$e]=/usr/share/digikam/profiles/srgb-d65.icm
+
+[Copy To Folder Settings]
+Last Copy To Folder Path=/home/lars/Nextcloud/Bilder/Wallpaper
 
 [CoreDB Settings]
 Recently Used Tags=235,241
@@ -926,7 +929,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwIoKCg=
+Database Encrypted Password=AwJpaWk=
 Database Hostname=
 Database Name=/home/lars/Pictures/
 Database Name Face=/home/lars/Pictures/
@@ -956,7 +959,7 @@ Minimized=false
 RestoreSize=-1
 
 [Digikam Right Sidebar]
-ActiveTab=6
+ActiveTab=0
 DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
@@ -1155,7 +1158,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=74,38
+TagComboBox-Selection=38,67
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1178,7 +1181,7 @@ writeMetadataToFile=false
 [Find Duplicates View]
 AlbumComboBox-Checked=
 AlbumComboBox-CurrentIndex=1
-AlbumComboBox-Expansion=1
+AlbumComboBox-Expansion=
 AlbumComboBox-RestoreChecked=true
 AlbumComboBox-Selection=1
 AlbumComboBox-SortColumn=0
@@ -1191,10 +1194,10 @@ Last search album tag relation=0
 Last search results restriction=0
 Lower bound for minimum similarity=40
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=62
+TagComboBox-CurrentIndex=67
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=74
+TagComboBox-Selection=67
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
@@ -1285,7 +1288,7 @@ Select First Album Item=true
 Show Only Face Tags For Assigning Name=true
 Show Permanent Delete Dialog=true
 Show Splash=true
-Show Trash Delete Dialog=true
+Show Trash Delete Dialog=false
 String Comparison Type=0
 Use Large Thumbs=false
 Use Native File Dialog=false
@@ -1416,7 +1419,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=74
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=74
+TagComboBox-Selection=133,67
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -1470,10 +1473,9 @@ RestoreToolSettings=true
 Show Thumbbar=false
 ShowImageSettingsDialog=true
 SixteenBitsImage=false
-SplitterState=AAAA/wAAAAEAAAACAAAJ5gAAATkB/////wAAAAABAQ==
+SplitterState=AAAA/wAAAAEAAAACAAAIqAAAATkB/////wAAAAABAQ==
 TIFFCompression=false
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAEovwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAASiAAAAVwD///8AAAnmAAAE/QAAAAQAAAAEAAAACAAAAAj8AAAAAA==
-ToolBarsMovable=Disabled
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAAAAAEAAAAEovwCAAAAAfsAAAAeAGUAZABpAHQAbwByAF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAASiAAAAVwD///8AAAioAAAE+gAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 Unclip Color=0
 UnderExposureColor=255,255,255
 UnderExposureIndicator=false
@@ -1491,12 +1493,12 @@ demosaicing Expanded=true
 whitebalance Expanded=true
 
 [ImageViewer Settings][Right Sidebar]
-ActiveTab=0
+ActiveTab=2
 DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
 LocationProperties Expanded=true
-Minimized=true
+Minimized=false
 PhotographProperties Expanded=true
 RestoreSize=-1
 RightsProperties Expanded=true
@@ -1648,10 +1650,10 @@ CaseSensitive=0
 CaseSensitive=0
 
 [ItemIconViewTagFilterView]
-CurrentIndex=
+CurrentIndex=143
 Expansion=52
 RestoreChecked=false
-Selection=
+Selection=143
 SortColumn=0
 SortOrder=0
 Toggle Auto Tags=0
@@ -1865,9 +1867,9 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [MainWindow]
-InitialAlbumID=800
+InitialAlbumID=-2
 SplitterState=AAAA/wAAAAEAAAADAAABhgAADuwAAAE5Af////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAb9AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABv0AAABXAP///wAABv0AAAT9AAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAb9AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABv0AAABXAP///wAABv0AAAT6AAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [Marble Settings]
 Angle Unit=1
@@ -2021,7 +2023,7 @@ CaseSensitive=0
 [Select Reference]
 AlbumComboBox-Checked=
 AlbumComboBox-CurrentIndex=1
-AlbumComboBox-Expansion=1
+AlbumComboBox-Expansion=
 AlbumComboBox-RestoreChecked=true
 AlbumComboBox-Selection=1
 AlbumComboBox-SortColumn=0
@@ -2077,10 +2079,10 @@ TypeMimeFilter Expanded=true
 
 [TagView Sidebar]
 AutotagScanWidgetExpanded=true
-CurrentIndex=235
-Expansion=0,223,235,135,121,136,48,49,50,131,132,71,98,4
+CurrentIndex=143
+Expansion=0,223,235,143,157,135,121,136,48,49,50,131,132,71,98,4,227
 RestoreChecked=false
-Selection=235
+Selection=143
 SortColumn=0
 SortOrder=0
 TagsSource=false
@@ -2114,13 +2116,13 @@ Show Original in View=true
 
 [adjustcurves Tool]
 AdjustCurvesChannel0Point0=0,0
-AdjustCurvesChannel0Point1=-1,-1
+AdjustCurvesChannel0Point1=1275,1020
 AdjustCurvesChannel0Point10=-1,-1
 AdjustCurvesChannel0Point11=-1,-1
-AdjustCurvesChannel0Point12=-1,-1
-AdjustCurvesChannel0Point13=-1,-1
-AdjustCurvesChannel0Point14=-1,-1
-AdjustCurvesChannel0Point15=-1,-1
+AdjustCurvesChannel0Point12=-255,63240
+AdjustCurvesChannel0Point13=-255,63750
+AdjustCurvesChannel0Point14=-255,65025
+AdjustCurvesChannel0Point15=-255,64515
 AdjustCurvesChannel0Point16=65025,65025
 AdjustCurvesChannel0Point17=-1,-1
 AdjustCurvesChannel0Point2=-1,-1
@@ -2274,12 +2276,35 @@ Ver.Oriented Custom Aspect Ratio Width=2667
 Ver.Oriented Custom Aspect Ratio Xpos=110
 Ver.Oriented Custom Aspect Ratio Ypos=0
 
-[bcgadjust Tool]
-BrightnessAdjustment=0
-ContrastAdjustment=0.75
-GammaAdjustment=1
+[autocorrection Tool]
+Auto Correction Filter=4
 Histogram Channel=0
 Histogram Scale=1
+
+[bcgadjust Tool]
+BrightnessAdjustment=0
+ContrastAdjustment=1.07
+GammaAdjustment=0.85
+Histogram Channel=5
+Histogram Scale=1
+
+[channelmixer Tool]
+BlackBlueGain=0
+BlackGreenGain=0
+BlackRedGain=1
+BlueBlueGain=1
+BlueGreenGain=0
+BlueRedGain=0
+GreenBlueGain=0
+GreenGreenGain=1
+GreenRedGain=0
+Histogram Channel=5
+Histogram Scale=1
+Monochrome=false
+PreserveLuminosity=true
+RedBlueGain=0
+RedGreenGain=0
+RedRedGain=1
 
 [freerotation Tool]
 Anti Aliasing=true
