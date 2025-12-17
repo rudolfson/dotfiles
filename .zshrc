@@ -71,11 +71,19 @@ export ZSH_CUSTOM=$HOME/.dotfiles/oh-my-zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    colored-man-pages
+    docker
+    docker-compose
     gcloud
     git
+    history-substring-search
     kubectl
+    npm
     nvm
     rust
+    terraform
+    web-search
+    fzf
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
