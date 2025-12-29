@@ -76,6 +76,7 @@ plugins=(
     docker-compose
     gcloud
     git
+    golang
     history-substring-search
     kubectl
     npm
