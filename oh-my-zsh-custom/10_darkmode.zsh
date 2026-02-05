@@ -29,7 +29,7 @@ _query_dark_mode() {
 _adjust_environment_to_dark_mode() {
     local current=$(_query_dark_mode)
     if [[ "$current" == "'prefer-dark'" ]] {
-        export BAT_THEME=
+        export BAT_THEME=auto
         export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=240
         if _is_desktop_environment xfce; then
             gsettings set org.gnome.desktop.interface gtk-theme Matcha-dark-azul
