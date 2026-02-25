@@ -35,7 +35,7 @@ _adjust_environment_to_dark_mode() {
             gsettings set org.gnome.desktop.interface gtk-theme Matcha-dark-azul
         fi
     } else {
-        export BAT_THEME=gruvbox-light
+        export BAT_THEME=ansi
         export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=250
         if _is_desktop_environment xfce; then
             gsettings set org.gnome.desktop.interface gtk-theme Matcha-light-azul
