@@ -5,5 +5,10 @@
     "svelte.enable-ts-plugin": true,
     "window.autoDetectColorScheme": true,
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Default Light Modern"
+    "workbench.colorTheme": "Light Modern",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "claudeCode.preferredLocation": "panel",
+    "jdk.telemetry.enabled": false
 }
