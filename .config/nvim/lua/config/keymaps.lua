@@ -19,4 +19,7 @@ wk.add({
   -- search for notes
   { "<leader>sz", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", desc = "Notes", icon = "🗒️" },
   { "<leader>zs", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>", desc = "Search note", icon = "🔎" },
+
+  -- show tag list
+  { "<leader>zt", "<Cmd>ZkTags<CR>", desc = "Show tags", icon = "🏷️" },
 })
