@@ -1,8 +1,9 @@
 [AdvancedRename Dialog]
-Dialog Size=450,450
+Dialog Size=744,523
+Last Used Rename Pattern=[date].[ext]{lower}
 
 [AdvancedRename Input]
-Pattern History List=\\0
+Pattern History List=,[date].[ext]{lower}
 
 [AdvancedRename Widget]
 Options are expanded=true
@@ -92,21 +93,51 @@ TreeView Font=Cantarell,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 Update Type=0
 
 [AlbumFolderView Sidebar]
-CurrentIndex=800
-Expansion=0,1,9,10,11,12,14,15,17,21,23,25,26,33,168,184,185,640,657,711,811,800,815,791,792,793,794,795,796,797,798,161,814,-2
+CurrentIndex=840
+Expansion=0,1,3,5,6,7,9,10,11,12,14,15,17,21,23,25,26,33,794,795,796,797,798,168,184,185,201,218,240,244,259,278,269,304,536,339,371,404,498,606,650,640,657,711,811,800,839,840,815,818,790,791,792,793,799,161,814,817,332,819,-2
 RestoreChecked=false
-Selection=800
+Selection=840
 SortColumn=0
 SortOrder=0
 
 [AlbumIconViewFilterSearchTextBar Search Text Tool]
 CaseSensitive=0
 
+[AlbumSelectTabs_DBInfoIface]
+AlbumSearchBarCaseSensitive=0
+AlbumTreeViewChecked=
+AlbumTreeViewCurrentIndex=
+AlbumTreeViewExpansion=1
+AlbumTreeViewRestoreChecked=true
+AlbumTreeViewSelection=
+AlbumTreeViewSortColumn=0
+AlbumTreeViewSortOrder=0
+LabelsTreeViewColorSelection=
+LabelsTreeViewExpansion=
+LabelsTreeViewPickSelection=
+LabelsTreeViewRatingSelection=
+SearchSearchBarCaseSensitive=0
+SearchTreeViewChecked=
+SearchTreeViewCurrentIndex=
+SearchTreeViewExpansion=
+SearchTreeViewRestoreChecked=true
+SearchTreeViewSelection=
+SearchTreeViewSortColumn=0
+SearchTreeViewSortOrder=0
+TagSearchBarCaseSensitive=0
+TagTreeViewChecked=
+TagTreeViewCurrentIndex=
+TagTreeViewExpansion=
+TagTreeViewRestoreChecked=true
+TagTreeViewSelection=
+TagTreeViewSortColumn=0
+TagTreeViewSortOrder=0
+
 [AlbumSelectWidget]
-AlbumTreeViewCurrentIndex=814
-AlbumTreeViewExpansion=1,817
+AlbumTreeViewCurrentIndex=840
+AlbumTreeViewExpansion=1,839,817
 AlbumTreeViewRestoreChecked=false
-AlbumTreeViewSelection=814
+AlbumTreeViewSelection=840
 AlbumTreeViewSortColumn=0
 AlbumTreeViewSortOrder=0
 CaseSensitive=0
@@ -130,7 +161,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=74
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=108,67
+TagComboBox-Selection=243,152
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -167,7 +198,7 @@ FullScreen Hide SideBars=false
 FullScreen Hide StatusBar=false
 FullScreen Hide ThumbBar=true
 FullScreen Hide ToolBars=false
-LastTargetAlbum=814
+LastTargetAlbum=820
 LossLessFormat=0
 Manual Rename String=
 OnFlyBox Expanded=true
@@ -273,7 +304,7 @@ ColorName_yellow=Yellow
 Last Copy To Folder Path=/home/lars/Nextcloud/Bilder/Wallpaper
 
 [CoreDB Settings]
-Recently Used Tags=235,241
+Recently Used Tags=247,136,204,246,245,162,36,244,35,101
 
 [DMetadata Settings]
 readingAllTags=false
@@ -945,7 +976,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwJDQ0M=
+Database Encrypted Password=AwI6Ojo=
 Database Hostname=
 Database Name=/home/lars/Pictures/
 Database Name Face=/home/lars/Pictures/
@@ -989,13 +1020,13 @@ VideoProperties Expanded=true
 
 [Digikam Right Sidebar][Captions Tags Properties Tab]
 Contact Expanded=true
-ItemDescEdit Tab=2
+ItemDescEdit Tab=1
 ItemDescEditTab CaptionsLang=x-default
 ItemDescEditTab SearchBarCaseSensitive=0
-ItemDescEditTab TagCheckViewCurrentIndex=235
-ItemDescEditTab TagCheckViewExpansion=0
+ItemDescEditTab TagCheckViewCurrentIndex=0
+ItemDescEditTab TagCheckViewExpansion=0,245
 ItemDescEditTab TagCheckViewRestoreChecked=false
-ItemDescEditTab TagCheckViewSelection=235
+ItemDescEditTab TagCheckViewSelection=0
 ItemDescEditTab TagCheckViewSortColumn=0
 ItemDescEditTab TagCheckViewSortOrder=0
 ItemDescEditTab TagCheckViewToggle Auto Tags=0
@@ -1174,7 +1205,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=108,67
+TagComboBox-Selection=243,152
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1210,10 +1241,10 @@ Last search album tag relation=0
 Last search results restriction=0
 Lower bound for minimum similarity=40
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=108
+TagComboBox-CurrentIndex=243
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=108
+TagComboBox-Selection=243
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
@@ -1309,7 +1340,7 @@ Show Trash Delete Dialog=false
 String Comparison Type=0
 Use Large Thumbs=false
 Use Native File Dialog=false
-Use Trash=true
+Use Trash=false
 Version=8.4.0
 
 [Geolocation Edit Settings]
@@ -1436,7 +1467,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=74
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=108,67
+TagComboBox-Selection=243,152
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -1603,7 +1634,7 @@ IgnoreNames=mgr_data pgr_mgr
 
 [Import MainWindow]
 SplitterState=AAAA/wAAAAEAAAABAAABfgH/////AAAAAAEB
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAnlAAAAwPwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByAAAAAAAAAAnlAAAAVwD///8AAAnlAAAE/QAAAAQAAAAEAAAACAAAAAj8AAAAAA==
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAnfAAAAwPwBAAAAAfsAAAAeAGkAbQBwAG8AcgB0AF8AdABoAHUAbQBiAGIAYQByCAAAAAAAAAnfAAAAVwD///8AAAnfAAAE1AAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 
 [Import Settings]
 Default Icon Size=142
@@ -1616,7 +1647,7 @@ Icon Show Rating=true
 Icon Show Size=false
 Icon Show Tags=true
 Icon Show Title=true
-IconView Font=Cantarell,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+IconView Font=Cantarell,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 Image Separation Mode=1
 Image Sort Order=0
 Image Sorting=0
@@ -1626,7 +1657,7 @@ Preview Load Full Image Size=false
 Preview Show Icons=true
 Show Thumbbar=true
 Show ToolTips=false
-ToolTips Font=Cantarell,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+ToolTips Font=Cantarell,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 ToolTips Show File Date=false
 ToolTips Show File Name=true
 ToolTips Show File Size=false
@@ -1699,6 +1730,10 @@ size=320
 historyUrls=,
 targetUrl=file:///run/media/lars/bigstick/ausgedruckt
 
+[KioImport]
+historyUrls=,,
+sourceUrl=
+
 [Labels Sidebar]
 ColorSelection=
 Expansion=
@@ -1716,8 +1751,7 @@ FullScreen Hide ToolBars=false
 Horizontal Splitter State=AAAA/wAAAAEAAAADAAABOQAACqoAAAE5Af////8AAAAAAQE=
 Navigate By Pair=false
 Show Thumbbar=true
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAnMAAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAACcwAAABXAP///wAACcwAAAT9AAAABAAAAAQAAAAIAAAACPwAAAAA
-ToolBarsMovable=Disabled
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAi1AAAAwPwBAAAAAfsAAAAmAGwAaQBnAGgAdAB0AGEAYgBsAGUAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAACLUAAABXAP///wAACLUAAARpAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [LightTable Settings][Left Sidebar]
 ActiveTab=0
@@ -1884,9 +1918,9 @@ Version Properties Tab=versions
 Version Properties View Mode=2
 
 [MainWindow]
-InitialAlbumID=800
+InitialAlbumID=840
 SplitterState=AAAA/wAAAAEAAAADAAABhgAADuwAAAE5Af////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAb3AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIAAAAAAAAABvcAAABXAP///wAABvcAAAUCAAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAb3AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIIAAAAAAAABvcAAABXAP///wAABvcAAAUCAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [Marble Settings]
 Angle Unit=1
@@ -2012,6 +2046,7 @@ Write Metadata To RAW Files=false
 CaseSensitive=0
 
 [Notification Messages]
+DontAskAgainToDeleteItemsFromCamera=false
 HelpBoxNotifSeen=true
 
 [People Sidebar]
@@ -2025,6 +2060,28 @@ SortOrder=0
 
 [PluginsSearchBar Search Text Tool]
 CaseSensitive=0
+
+[PrintCreator]
+CaptionColor=255,255,0
+CaptionFont=Noto Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+CaptionSize=4
+CaptionType=0
+ConflictRule=0
+Custom-autorotate=false
+Custom-choice=1
+Custom-gridSize=3,8
+Custom-photoSize=5,4
+Custom-photoUnits=0
+CustomCaption=
+ImageFormat=0
+OpenInFileBrowser=true
+OutputPath=file:///home/lars/Documents
+PhotoSize=Full page
+Printer=Print to Image File
+SelMode=0
+
+[PrintCreator Settings]
+gimpBinary[$e]=
 
 [Search Sidebar]
 CurrentIndex=
@@ -2080,7 +2137,7 @@ TranslatorEngine=0
 TranslatorLang=de-DE,en-US,es-ES,fr-FR,it-IT,pt-PT
 
 [Survey Settings]
-Horizontal Splitter State=AAAA/wAAAAEAAAAC//////////8B/////wAAAAABAQ==
+Horizontal Splitter State=AAAA/wAAAAEAAAACAAABBAAAATkB/////wAAAAABAQ==
 Show Thumbbar=true
 ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAMAAAAAAAAAAPwBAAAAAfsAAAAeAHMAdQByAHYAZQB5AF8AdABoAHUAbQBiAGIAYQByAQAAAAD/////AAAAVwD///8AAAAAAAAAAAAAAAQAAAAEAAAACAAAAAj8AAAAAA==
 
@@ -2092,7 +2149,7 @@ ItemProperties Expanded=true
 LocationProperties Expanded=true
 Minimized=true
 PhotographProperties Expanded=true
-RestoreSize=-1
+RestoreSize=48
 RightsProperties Expanded=true
 TagsProperties Expanded=true
 VideoProperties Expanded=true
@@ -2191,6 +2248,23 @@ SortColumn=0
 SortOrder=0
 TagsSource=false
 
+[Theme elegant.desktop]
+author=
+bgColor=#000000
+fgColor=#888888
+frameBorderColor=#444444
+frameColor=#222222
+hoverLinkColor=#ffffff
+linkColor=#aaaaaa
+pageSize=20
+paginationLocation=top
+selectedFrameBorderColor=#dddddd
+selectedFrameColor=#555555
+slideInterval=6000
+style=dark.css
+useLyteBox=true
+visitedLinkColor=#aaaaaa
+
 [TimeLine Sidebar]
 CurrentIndex=
 Cursor Position=2024,9,1,0,0,0
@@ -2222,6 +2296,12 @@ Save Intermediate When Not Reproducible=false
 Saving Format for Versions=JPG
 Show Intermediates in View=true
 Show Original in View=true
+
+[WebBrowserDlg]
+2560x1440 screen: Window-Maximized=true
+
+[WebBrowserDlgSearchBar Search Text Tool]
+CaseSensitive=0
 
 [adjustcurves Tool]
 AdjustCurvesChannel0Point0=0,0
@@ -2421,6 +2501,11 @@ Auto Crop Type=2
 AutoAdjustContainer Expanded=true
 Background Color=0,0,0
 SettingsContainer Expanded=true
+
+[general]
+destUrl=file:///home/lars/tmp/gallery
+imageSelectionTitle=test gallery
+theme=elegant.desktop
 
 [hsladjust Tool]
 Histogram Channel=0
