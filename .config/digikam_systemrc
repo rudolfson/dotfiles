@@ -10,6 +10,7 @@ enableHWTConv=false
 enableHWVideo=false
 enableLogging=false
 enableOpenCL=false
+facesEnginePath=/home/lars/.local/share/digikam/facesengine
 proxyAuth=false
 proxyPort=8080
 proxyType=0
