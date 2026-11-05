@@ -13,7 +13,7 @@ Album Collections=,Category,Friends,Holidays,Miscellaneous,Nature,Party,Todo,Tra
 Album Monitoring=false
 Album Sort Role=0
 All Groups Open=false
-Default Icon Size=227
+Default Icon Size=256
 Default Tree Face Size=48
 Default Tree Icon Size=22
 Icon Show Aspect Ratio=false
@@ -94,7 +94,7 @@ Update Type=0
 
 [AlbumFolderView Sidebar]
 CurrentIndex=872
-Expansion=0,1,3,5,6,7,9,10,11,12,14,15,17,21,23,25,26,33,791,792,793,794,795,796,797,798,168,184,185,799,201,218,240,244,259,278,269,304,536,339,371,404,498,606,650,640,657,837,711,811,868,800,838,848,847,846,869,839,840,870,845,844,843,872,871,815,818,790,161,814,817,332,819,-2,849,850,851,861,860,862,863,864,-3
+Expansion=0,1,3,5,6,7,9,10,11,12,14,15,17,21,23,25,26,33,791,792,793,794,795,796,797,798,168,184,185,799,201,218,240,244,259,278,269,304,536,339,371,404,498,606,650,640,657,837,711,811,868,800,838,848,847,846,869,839,840,870,845,844,843,872,871,873,815,818,790,161,814,817,332,819,-2,849,850,851,861,860,862,863,864,-3
 RestoreChecked=false
 Selection=872
 SortColumn=0
@@ -161,7 +161,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=74
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=192,152
+TagComboBox-Selection=125,152
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -1043,7 +1043,7 @@ tagPaths=1
 
 [Database Settings]
 Database Connectoptions=
-Database Encrypted Password=AwJ/f38=
+Database Encrypted Password=AwKGhoY=
 Database Hostname=
 Database Name=/home/lars/Pictures/
 Database Name Face=/home/lars/Pictures/
@@ -1073,7 +1073,7 @@ Minimized=false
 RestoreSize=-1
 
 [Digikam Right Sidebar]
-ActiveTab=0
+ActiveTab=6
 DigikamProperties Expanded=true
 FileProperties Expanded=true
 ItemProperties Expanded=true
@@ -1273,7 +1273,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=4
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=192,152
+TagComboBox-Selection=125,152
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 Use Full CPU=false
@@ -1290,15 +1290,15 @@ overwrite=false
 removeMetadata=false
 sidecars=false
 targetBehavior=0
-targetUrl=file:///home/lars/tmp/pixum
+targetUrl=file:///home/lars/tmp/winfried
 writeMetadataToFile=false
 
 [Find Duplicates View]
 AlbumComboBox-Checked=
-AlbumComboBox-CurrentIndex=849
-AlbumComboBox-Expansion=1,849
+AlbumComboBox-CurrentIndex=1
+AlbumComboBox-Expansion=
 AlbumComboBox-RestoreChecked=true
-AlbumComboBox-Selection=1,849
+AlbumComboBox-Selection=1
 AlbumComboBox-SortColumn=0
 AlbumComboBox-SortOrder=0
 AlbumTypeEntry=0
@@ -1309,13 +1309,13 @@ Last search album tag relation=0
 Last search results restriction=0
 Lower bound for minimum similarity=40
 TagComboBox-Checked=
-TagComboBox-CurrentIndex=75
+TagComboBox-CurrentIndex=125
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=192,75
+TagComboBox-Selection=125
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
-UseWholeAlbumsEntry=true
+UseWholeAlbumsEntry=false
 UseWholeTagsEntry=false
 
 [Fuzzy Search Sidebar]
@@ -1536,7 +1536,7 @@ TagComboBox-Checked=
 TagComboBox-CurrentIndex=74
 TagComboBox-Expansion=
 TagComboBox-RestoreChecked=true
-TagComboBox-Selection=192,152
+TagComboBox-Selection=125,152
 TagComboBox-SortColumn=0
 TagComboBox-SortOrder=0
 UseWholeAlbumsEntry=true
@@ -1988,7 +1988,7 @@ Version Properties View Mode=2
 [MainWindow]
 InitialAlbumID=872
 SplitterState=AAAA/wAAAAEAAAADAAABxAAABrkAAAE5Af////8AAAAAAQE=
-ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAa5AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIIAAAAAAAABrkAAABXAP///wAABrkAAAQ8AAAABAAAAAQAAAAIAAAACPwAAAAA
+ThumbbarState=AAAA/wAAAAD9AAAAAQAAAAIAAAa5AAAAwPwBAAAAAfsAAAAmAG0AYQBpAG4AdwBpAG4AZABvAHcAXwB0AGgAdQBtAGIAYgBhAHIIAAAAAAAABrkAAABXAP///wAABrkAAAUCAAAABAAAAAQAAAAIAAAACPwAAAAA
 
 [Marble Settings]
 Angle Unit=1
@@ -2218,10 +2218,10 @@ CaseSensitive=0
 
 [Select Reference]
 AlbumComboBox-Checked=
-AlbumComboBox-CurrentIndex=849
-AlbumComboBox-Expansion=1,849
+AlbumComboBox-CurrentIndex=1
+AlbumComboBox-Expansion=
 AlbumComboBox-RestoreChecked=true
-AlbumComboBox-Selection=1,849
+AlbumComboBox-Selection=1
 AlbumComboBox-SortColumn=0
 AlbumComboBox-SortOrder=0
 UseWholeAlbumsEntry=false
@@ -2357,7 +2357,7 @@ CaseSensitive=0
 FaceTagsFilter Expanded=true
 LabelsFilter Expanded=true
 Matching Condition=0
-Search Text Filter Fields=127
+Search Text Filter Fields=255
 Show Untagged=false
 Show Without Face=false
 TagsFilter Expanded=true
