@@ -26,13 +26,9 @@ function bb_activate() {
     echo "could not find repo entry in file $config_file for config $config"
     return
   }
-  if [[ $(jq '."'$config'" | has("pass")' < $config_file) == "false" ]] {
-    echo "could not find pass entry in file $config_file for config $config"
-    return
-  }
 
   repo=$(jq -r ".$config".repo < "$config_file")
-  pass_cmd="jq -r '.$config'.pass '$config_file'"
+  pass_cmd="systemd-ask-password Enter pass for $repo"
   
   export BORG_REPO="$repo"
   export BORG_PASSCOMMAND="$pass_cmd"
