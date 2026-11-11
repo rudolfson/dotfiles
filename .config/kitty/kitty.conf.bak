@@ -2593,7 +2593,7 @@
 
 
 # BEGIN_KITTY_THEME
-# Gnome Light
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
 
